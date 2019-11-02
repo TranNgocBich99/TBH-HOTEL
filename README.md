@@ -1,4 +1,4 @@
-# TBH-Hotel
+
 <h1>1. Định hướng và Các kết quả then chốt cần đạt được </h1>
 <h2>1.1 Định hướng</h2>
 <ul>
@@ -11,6 +11,7 @@
 </ul>
 <h2>1.2 Các kết quả then chốt cần đạt được</h2>
 <ul>
+  <li>Tên đề tài: TBH-HOTEL</li>
   <li>Thiết kế chương trình quản lý khách sạn, mang đến một trang web thân thiện với người dùng, nhiều thông tin bổ ích</li>
 </ul>
 
