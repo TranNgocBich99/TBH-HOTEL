@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+* ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+.book{
+	position: relative;
+	height: 250px;
+	background: transparent url(../images/img1.jpg) center center/cover no-repeat;
+}
+.book .hotel{
+	position: absolute;
+	color: #fff;
+	font-size: 35px;
+	left: 45%;
+	top: 20%;
+}
+.info{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f4f4f4;
+}
+.info p.star i{
+	color: #ffcc00;
+}
+.info img{
+	cursor: pointer;
+}
+.info .des{
+	overflow: hidden;
+}
+.info .des ul li{
+	float: left;
+	margin-right: 40px;
+}
+.info .info-room{
+	overflow: hidden;
+}
+.info .info-room ul li{
+	float: left;
+	margin-right: 36px;
+	color: #666666;
+}
+.info p.room{
+	display: inline-block;
+	color: #2a2a2a;
+	font-weight: 600;
+	font-size: 24px;
+	border-bottom: 2px solid #fd566f; 
+}
+.info p.price{
+	font-size: 16px; 
+	font-weight: bold;
+	color: #fd566f;
+}
+.book-room{
+	margin-top: 50px;
+	background-color: #B0A06C;
+	border: 1px solid #B0A06C;
+	float: right;
+}
+input{
+	border: none;
+	width: 200px;
+	outline: none;
+	
+}
+.cal{
+	position: relative;
+	display: inline-block;
+	padding: 25px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+}
+.calendar .down{
+	position: absolute;
+	right: 29px;
+	top: 26px;
+}
+.cal i{
+	font-size: 24px;
+	color: #B0A06C;
+}
+.calendar .down i{
+	font-size: 20px;
+}
+.cal:hover{
+	background: #F5F5F5;
+	border-bottom: 2px solid #B0A06C;
+}
+hr{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.search{
+	margin-top: 28px;
+	float: right;
+}
+.search button{
+	border: none;
+	background: none;
+	outline: none;
+	color: #999999;
+	
+}
