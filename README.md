@@ -26,3 +26,10 @@
   </ul>
 
 <h1>3. Hướng dẫn sử dụng và cài đặt</h1>
+<h1>4. Thành viên trong nhóm </h1>
+  <ul>
+  <li>Trần Ngọc Bích </li>
+  <li>Nguyễn Thị Huệ </li>
+  <li>Vũ Thị Hạnh Trang</li>
+  <li>Mai Huyền Trang</li>
+  </ul
