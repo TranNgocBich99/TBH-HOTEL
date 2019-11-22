@@ -1,6 +1,9 @@
 <?php
-session_start();
-class HOTEL{
+if(!session_id()){
+	session_start();
+}
+
+class TBHInit{
 	public function __construct() {
 		$this->init();
 		$this->route();
@@ -65,7 +68,7 @@ class HOTEL{
 		);
 
 		$files = array(
-			
+			'controller/hotel'
 		);
 		$this->load($config_files);
 		$this->load($helper_files);
@@ -83,4 +86,4 @@ class HOTEL{
 	}
 }
 
-new HOTEL();
+new TBHInit();

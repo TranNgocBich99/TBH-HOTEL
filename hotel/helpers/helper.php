@@ -1,7 +1,7 @@
 <?php
 if(!function_exists('dd')){
 	function dd($arr){
-		echo '<pre>';
+		echo '<pre style="background: #000; color: #fff; padding: 20px;">';
 		print_r($arr);
 		echo '</pre>';
 	}
