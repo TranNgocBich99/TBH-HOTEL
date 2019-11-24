@@ -48,19 +48,13 @@ button.but{
 	margin-right: 30px;
 }
 .footer{
-	background: #F7F8F9;
-	border-top: 2px solid #f4f4f4;
 	color: #5e5e5e;
 	font-size: 17px;
 	margin-top: 50px;
 	font-family: 'Playfair Display', serif;
 }
 .footer1{
-
 	margin-bottom: 50px;
-}
-.footer2{
-	margin-bottom: 15px;
 }
 .ho{
 	padding-bottom: 30px;
@@ -134,26 +128,14 @@ button.but{
 }
 /*header footer*/
 
-.giua{
-	margin-left: 580px;
-	margin-top: -480px;
+.cau h1{
 	font-family: 'Playfair Display', serif;
 }
 .content1{
 	margin-top: -25px;
 }
-.content2,.content3, .content4{
-	margin-top: 30px;
-}
-.img4, .img5{
-	width: 282px;
-	height: 387px;
-}
-.khach{
-	font-family: 'Playfair Display', serif;
-}
-img{
-	width: 100%;
+.content2{
+	margin-top: 50px;
 }
 .gioithieu{
 	font-size: 17px;
@@ -161,35 +143,37 @@ img{
     color: #5e5e5e;
     font-family: 'Playfair Display', serif;
 }
-.gioithieu.a a{
-	text-decoration: none;
-	color: #5e5e5e;
-}
-.img6{
-	margin-top: 30px;
-}
-.gioithieu.b{
-	margin-top: 10px;
-}
-.gioithieu.c{
-	margin-bottom: 30px;
-}
-.img7{
+.img21 img{
 	position: relative;
+	width: 1000px;
+	height: 500px;
+	margin-top: 50px;
 }
-.mua{
+#map{
+	margin-top: -500px;
+	margin-left: 670px;
 	position: absolute;
-	z-index: 1;
-	margin-top: -70px;
-	background-color: white;
-	width: 480px;
-	
-	height: 40px;
-	margin-left: 45px;
-
 }
-.mua h5{
-	padding-left: 20px!important;
+.mapp iframe{
+	width: 400px!important;
+	height: 400px;
+}
+.di h1{
 	font-family: 'Playfair Display', serif;
-	margin-top: 12px;
+	margin-top: 100px;
+	margin-left: 450px;
+	margin-bottom: 50px;
+}
+.haha{
+	color: #daa520;
+	font-size: 15px;
+    line-height: 28px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.img10 img{
+	width: 1000px;
+	height: 500px;
+	margin-bottom: 50px;
 }

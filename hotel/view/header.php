@@ -3,11 +3,16 @@
 	<title> Example </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-	<link href="assets/plugins/fontawesome/css/all.css" rel="stylesheet">
-	<link rel="icon" type="image/png" href="assets/images/logo2.png">
- 	<link rel="stylesheet" href="assets/css/1.css">
-
+	<link rel="stylesheet" href="<?php ue_assets('bootstrap/css/bootstrap.css') ?>">
+	<link href="<?php ue_assets('plugins/fontawesome/css/all.css') ?>" rel="stylesheet">
+	<link rel="icon" type="image/png" href="<?php ue_assets('images/logo2.png') ?>">
+ 	<link rel="stylesheet" href="<?php ue_assets('css/1.css') ?>">
+ 	<link rel="stylesheet" href="<?php ue_assets('css/intro.css') ?>">
+ 	<link rel="stylesheet" href="<?php ue_assets('css/style.css') ?>">
+ 	<link rel="stylesheet" href="<?php ue_assets('css/style1.css') ?>">
+ 	<script>
+        var site_url = '<?php echo SITEURL; ?>';
+    </script>
 </head>
 <body >
 	<div class="header">
@@ -42,13 +47,13 @@
     			<div class="container">
     				<div class="row">
     					<div class="col-sm-12">
-				<a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="" style="width: 95px;height: 95px; margin-top: -30px; margin-right: 200px;"></a>
+				<a class="navbar-brand" href="<?php echo SITEURL; ?>"><img src="<?php ue_assets('images/logo.png') ?>" alt="" style="width: 95px;height: 95px; margin-top: -30px; margin-right: 200px;"></a>
     			<ul class="nav navbar-nav khungmenu">
     				<li class="nav-item">
-    					<a class="nav-link me a" href="#"><b><i class="fa fa-home" aria-hidden="true"></i></b></a>
+    					<a class="nav-link me a" href="<?php echo SITEURL; ?>"><b><i class="fa fa-home" aria-hidden="true"></i></b></a>
     				</li>
     				<li class="nav-item active">
-    					<a class="nav-link me " href="#"><b>Giới thiệu</b>  <span class="sr-only">(current)</span></a>
+    					<a class="nav-link me " href="<?php echo SITEURL . 'introduce/index'; ?>"><b>Giới thiệu</b>  <span class="sr-only">(current)</span></a>
     				</li>
     				<li class="nav-item ha">
     					<a class="nav-link me" href="#"><b>Phòng nghỉ</b></a>
@@ -64,10 +69,10 @@
     					
     				</li>
     				<li class="nav-item">
-    					<a class="nav-link me" href="#"><b>Ưu đãi</b></a>
+    					<a class="nav-link me" href="<?php echo SITEURL . 'endow/index'; ?>"><b>Ưu đãi</b></a>
     				</li>
     				<li class="nav-item">
-    					<a class="nav-link " href="#"><button type="button" class="btn btn but"><b>Đặt phòng</b> </button></a>
+    					<a class="nav-link " href="<?php echo SITEURL . 'book/index'; ?>"><button type="button" class="btn btn but"><b>Đặt phòng</b> </button></a>
     				</li>
     			</ul>
     					</div>

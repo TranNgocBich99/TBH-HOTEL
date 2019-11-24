@@ -1,12 +1,13 @@
 <?php
 
 ?>	
+</hr>
 <div class="footer">
 	<div class="footer1">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">
-					<img src="assets/images/logo.png" class = "logo">
+					<img src="<?php ue_assets('images/logo.png') ?>" class = "logo">
 					<div>Mời quý khách hãy đến với TBH Hotel để cảm nhận sự bình yên và thư thái</div>
 				</div>
 				<div class="col-sm-6 hotea">
@@ -44,8 +45,8 @@
 		</div>
 	</div>
 </div>
-	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="assets/js/1.js"></script>
+	<script type="text/javascript" src="<?php ue_assets('js/jquery.min.js') ?>"></script>
+	<script type="text/javascript" src="<?php ue_assets('bootstrap/js/bootstrap.js') ?>"></script>
+	<script type="text/javascript" src="<?php ue_assets('js/1.js') ?>"></script>
 </body>
 </html>

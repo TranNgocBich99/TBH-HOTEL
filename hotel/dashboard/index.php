@@ -1,5 +1,8 @@
 <?php
-session_start();
+if(!session_id()){
+	session_start();
+}
+
 class HOTEL_Admin{
 	public function __construct() {
 		$this->init();
@@ -61,16 +64,18 @@ class HOTEL_Admin{
 		);
 
 		$files = array(
-			
+			'model/room',
+			'controller/admin',
+			'controller/room'
 		);
 		$this->load($config_files);
 		$this->load($helper_files);
 		$this->load($core_files);
 		$this->load($files);
 
-		if(!ue_is_login()){
+		/*if(!ue_is_login()){
 			header('location: ' . SITEURL);
-		}
+		}*/
 	}
 
 	private function load($arr){

@@ -1,4 +1,15 @@
 <?php
+if(!function_exists('ue_assets')){
+	function ue_assets($path, $return = false){
+		if($return){
+			return SITEURL . 'assets/' . $path;	
+		}else{
+			echo SITEURL . 'assets/' . $path;
+		}
+		
+	}
+}
+
 if(!function_exists('dd')){
 	function dd($arr){
 		echo '<pre style="background: #000; color: #fff; padding: 20px;">';

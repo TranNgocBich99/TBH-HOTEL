@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+* ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+.pic {
+	height: 550px;
+	background: transparent url(../images/Lobby_3.jpg) center center/cover no-repeat;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: -20px;
+}
+.endow{
+	margin-bottom: 30px;
+}
+h1{
+	font-size: 35px;
+	font-family: 'Playfair Display', serif;
+}
+p{
+	margin-bottom: 40px;
+}
+.img1{
+	height: 370px;
+	background: transparent url(../images/tumai.jpg) center center/cover no-repeat;
+	position: relative;
+}
+.img1 .text1 a{
+	color: black;
+	font-weight: 600;
+	font-family: 'Playfair Display', serif;
+}
+.img1:hover{
+	cursor: pointer;
+}
+.img1 .text1{
+	padding: 13px 20px;
+	position: absolute;
+	bottom: 16px;
+	left: 20px;
+	right: 20px;
+	background: rgba(255, 255, 255, 0.9);
+}
+.img2{
+	height: 370px;
+	background: transparent url(../images/Activiti_5.jpg) center center/cover no-repeat;
+}
+.img3{
+	height: 370px;
+	background: transparent url(../images/Suite_17.jpg) center center/cover no-repeat;
+}
