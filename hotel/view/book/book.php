@@ -141,11 +141,3 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="<?php ue_assets('plugins/daterangepicker/moment.min.js') ?>"></script>
-	<script>
-	$(function() {
-	  $('input[name="daterange"]').daterangepicker({
-	    opens: 'right'
-	  });
-	});
-	</script>

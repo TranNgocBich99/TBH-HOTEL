@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
 	<link rel="stylesheet" href="<?php ue_assets('bootstrap/css/bootstrap.css') ?>">
 	<link href="<?php ue_assets('plugins/fontawesome/css/all.css') ?>" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="<?php ue_assets('plugins/daterangepicker/daterangepicker.css')?>">
 	<link rel="icon" type="image/png" href="<?php ue_assets('images/logo2.png') ?>">
  	<link rel="stylesheet" href="<?php ue_assets('css/1.css') ?>">
  	<link rel="stylesheet" href="<?php ue_assets('css/intro.css') ?>">

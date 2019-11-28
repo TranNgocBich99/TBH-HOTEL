@@ -60,10 +60,15 @@ a{
 	color: #fd566f;
 }
 .book-room{
+	color: #fff;
 	margin-top: 50px;
 	background-color: #B0A06C;
 	border: 1px solid #B0A06C;
 	float: right;
+}
+button.book-room:hover{
+	color: #fff;
+	background-color: #343a40;
 }
 input{
 	border: none;

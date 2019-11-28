@@ -55,7 +55,7 @@
 			<div class="sidebar-sticky">
 				<ul class="nav flex-column">
 					<li class="nav-item one">
-						<a class="nav-link active" href="<?php echo ue_get_admin_link('book', 'index'); ?>">
+						<a class="nav-link active" href="<?php echo ue_get_admin_link('room', 'listRoom'); ?>">
 							Quản lý phòng
 						</a>
 					</li>

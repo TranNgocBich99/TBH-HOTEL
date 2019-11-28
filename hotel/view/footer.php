@@ -47,6 +47,16 @@
 </div>
 	<script type="text/javascript" src="<?php ue_assets('js/jquery.min.js') ?>"></script>
 	<script type="text/javascript" src="<?php ue_assets('bootstrap/js/bootstrap.js') ?>"></script>
+	<script type="text/javascript" src="<?php ue_assets('plugins/daterangepicker/moment.min.js') ?>"></script>
+	<script type="text/javascript" src="<?php ue_assets('plugins/daterangepicker/daterangepicker.js') ?>"></script>
+	<script>
+	$(function() {
+	  $('input[name="daterange"]').daterangepicker({
+	    opens: 'right'
+	  });
+	});
+
+	</script>
 	<script type="text/javascript" src="<?php ue_assets('js/1.js') ?>"></script>
 </body>
 </html>
