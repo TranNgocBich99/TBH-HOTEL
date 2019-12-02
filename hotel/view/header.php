@@ -60,11 +60,11 @@
     					<a class="nav-link me" href="#"><b>Phòng nghỉ</b></a>
     					<div class="mndc">
     						<ul class="itemaa">
-    						<li><a href=""><b>SUPERIOR</b></a></li>
-    						<li><a href=""><b>DELUXE</b></a></li>
-    						<li><a href=""><b>PREMIER EXECUTIVE</b></a></li>
-    						<li><a href=""><b>FINE ART LUXURY SUITE</b></a></li>
-    						<li><a href=""><b>EXTENSIVE FAMILY</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b>SUPERIOR</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b>DELUXE</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b>PREMIER EXECUTIVE</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b>FINE ART LUXURY SUITE</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b>EXTENSIVE FAMILY</b></a></li>
     					</ul>
     					</div>
     					
@@ -74,6 +74,12 @@
     				</li>
     				<li class="nav-item">
     					<a class="nav-link " href="<?php echo SITEURL . 'book/index'; ?>"><button type="button" class="btn btn but"><b>Đặt phòng</b> </button></a>
+    				</li>
+    				<li>
+    					<form class="form-inline my-2 my-lg-0 form-search" method="GET" action="<?php echo ue_get_link('room', 'search'); ?>">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Nhập từ tìm kiếm" aria-label="Search" required="" name="s" value="<?php echo isset($_GET['s']) ? $_GET['s'] : ''; ?>">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Tìm</button>
+                        </form>
     				</li>
     			</ul>
     					</div>

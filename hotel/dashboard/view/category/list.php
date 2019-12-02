@@ -1,6 +1,6 @@
 
 <div class="table-room ">
-	<h3 class="mb-4">Phòng <a href="<?php echo ue_get_admin_link('room','add'); ?>" class="btn btn-info btn-sm float-right">Thêm mới</a></h3>
+	<h3 class="mb-4">Danh mục <a href="<?php echo ue_get_admin_link('room','add'); ?>" class="btn btn-info btn-sm float-right">Thêm mới</a></h3>
 	<?php
 	if(!empty($res)) {
 		UE_Message::show('room');
@@ -10,10 +10,7 @@
 			<tr>
 				<th scope="col">Ảnh</th>
 				<th scope="col">Tên</th>
-				<th scope="col">Giá</th>
-                <th scope="col">Người lớn</th>
-				<th scope="col">Trẻ em</th>
-				<th scope="col">Danh mục</th>
+				<th scope="col">Mô tả</th>
 				<th scope="col"></th>
 			</tr>
 			</thead>
@@ -21,12 +18,10 @@
 			<?php foreach ($res as $k => $v){ ?>
 			<tr>
 				<td><img src="<?php echo SITEURL . '/assets/' . $v['thumb']; ?>" width="80" height="60"/></td>
-				<td><?php echo $v['room_name']; ?></td>
-				<td><?php echo ue_format_price($v['price']); ?></td>
-                <td><?php echo $v['adults']; ?></td>
-				<td><?php echo $v['children']; ?></td>
+				<td><?php echo $v['category_name']; ?></td>
+                <td><?php echo $v['description']; ?></td>
 				<td>
-					<a href="<?php echo ue_get_admin_link('room', 'edit') . '/' . $v['room_id']; ?>" class="btn btn-info btn-sm">Sửa</a>
+					<a href="<?php echo ue_get_admin_link('book', 'edit') . '/' . $v['id']; ?>" class="btn btn-info btn-sm">Sửa</a>
 					<a href="<?php echo ue_get_admin_link('room', 'delete') . '/' . $v['room_id']; ?>" class="btn btn-danger btn-sm">Xóa</a>
 				</td>
 			</tr>

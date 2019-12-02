@@ -6,7 +6,6 @@ a.ql{
 	padding: 10px;
 }
 nav.menu{
-	height: 100vh;
 	border-right: 1px solid #cccccc;
 }
 ul li.one{
@@ -18,4 +17,20 @@ ul li.one{
 
 .table-room{
 	margin-top: 70px;
+}
+form{
+	width: 70%;
+}
+label{
+	color: #7f7f7f;
+	font-weight: 600;
+	margin-left: 10px;
+	font-size: 17px;
+}
+h3{
+	margin-top: 60px;
+	color: #00007f;
+}
+.btn-add{
+	margin-bottom: 50px;
 }

@@ -41,6 +41,7 @@ a{
 }
 .info .info-room{
 	overflow: hidden;
+	margin-bottom: 12px;
 }
 .info .info-room ul li{
 	float: left;

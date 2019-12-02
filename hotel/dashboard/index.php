@@ -65,8 +65,10 @@ class HOTEL_Admin{
 
 		$files = array(
 			'model/room',
+			'model/category',
 			'controller/admin',
-			'controller/room'
+			'controller/room',
+			'controller/category'
 		);
 		$this->load($config_files);
 		$this->load($helper_files);
