@@ -102,7 +102,7 @@
 								<div class="gioithieu c">Dành riêng cho những tâm hồn đồng điệu</div>
 							</div>
 							<div class="col-sm-6">
-								<div class="gioithieu a text-right"><a href="">Xem tất cả các ưu đãi</a></div>
+								<div class="gioithieu a text-right"><a href="<?php echo SITEURL . 'endow/index'; ?>">Xem tất cả các ưu đãi</a></div>
 							</div>
 						</div>
 					</div>

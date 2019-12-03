@@ -1,8 +1,13 @@
 <?php
 if(!empty($res)){
-foreach ($res as $k => $v) {
+
+	?>
+	<p class="" style="color: #bf0000; font-size: 22px; font-weight: 600; text-align: center;margin-top: 40px;">Danh sách các phòng</p>
+	<?php
+	foreach ($res as $k => $v) {
 	# code...
-?>
+	?>
+
 <div class="container">
 <div class="row mt-5 info">
 	<div class="col-sm-3">
@@ -33,5 +38,7 @@ foreach ($res as $k => $v) {
  </div>
 <?php
 }
+}else{
+	echo "Không tìm thấy phòng nào!!";
 }
 ?>

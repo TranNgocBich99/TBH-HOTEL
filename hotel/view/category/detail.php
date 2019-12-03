@@ -1,8 +1,12 @@
 <?php
 if(!empty($res)){
-foreach ($res as $k => $v) {
+
+	?>
+	<p class="" style="color: #bf0000; font-size: 22px; font-weight: 600; text-align: center;margin-top: 40px;">Danh sách các phòng</p>
+	<?php
+	foreach ($res as $k => $v) {
 	# code...
-?>
+	?>
 <div class="container">
 <div class="row mt-5 info">
 	<div class="col-sm-3">
@@ -21,7 +25,7 @@ foreach ($res as $k => $v) {
 		<div class="des">
 			<ul>
 				<li><p><a href="#">Chi tiết <i class="fas fa-caret-right"></i></a></p></li>
-				<li><p class="price">Giá: <?php echo ue_format_price($v['price']); ?>đ</p></li>
+				<li><p class="price">Giá: <?php echo ue_format_price($v['price']); ?></p></li>
 			</ul>
 		</div>
 		
@@ -33,5 +37,7 @@ foreach ($res as $k => $v) {
  </div>
 <?php
 }
+}else{
+	echo "Không tìm thấy phòng nào!!";
 }
 ?>
