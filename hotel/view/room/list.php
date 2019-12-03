@@ -18,8 +18,7 @@ if(!empty($res)){
 		<div class="info-room mb-2">
 			<ul>
 				<li><i class="fas fa-female"></i> <?php echo $v['adults']; ?> người lớn</li>
-				<li><i class="fas fa-bed"></i> <?php echo $v['children']; ?> trẻ em</li>
-				<li><i class="fas fa-bath"></i> 2 phòng tắm</li>
+				<li><i class="fas fa-child"></i> <?php echo $v['children']; ?> trẻ em</li>
 			</ul>
 		</div>
 		<p class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
