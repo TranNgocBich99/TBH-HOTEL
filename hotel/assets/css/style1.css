@@ -25,6 +25,7 @@ a{
 .info{
 	padding-bottom: 20px;
 	border-bottom: 1px solid #f4f4f4;
+	padding-top: 20px;
 }
 .info p.star i{
 	color: #ffcc00;

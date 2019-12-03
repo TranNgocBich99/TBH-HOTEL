@@ -5,6 +5,7 @@ class Book extends Base_Controller{
 
 	}
 	public function index() {
-		$this->loadView('book/book');
+		$data = $this->model->getRoom();
+		$this->loadView('book/book', array('res' => $data));
 	}
 }

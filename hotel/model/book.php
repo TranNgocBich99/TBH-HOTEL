@@ -6,7 +6,7 @@ class Book_Model extends Base_Model{
 	}
 
 
-public function getRoom(){
+	public function getRoom(){
 		$sql = 'SELECT * FROM room';
 		$query = mysqli_query($this->conn, $sql);
 		$result = array();

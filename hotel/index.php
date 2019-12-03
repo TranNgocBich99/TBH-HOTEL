@@ -68,6 +68,7 @@ class TBHInit{
 		);
 
 		$files = array(
+			'model/book',
 			'model/room',
 			'model/category',
 			'controller/hotel',
