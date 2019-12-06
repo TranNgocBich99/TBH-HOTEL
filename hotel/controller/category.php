@@ -9,7 +9,8 @@ class Category extends Base_controller{
 		$this->loadView('category/detail', array('res' => $data));
 	}
 	public function index() {
-		$this->loadView('category/index');
+		$data = $this->model->getAllCategory();
+		$this->loadView('category/index', array('res' => $data));
 	}
 
 }

@@ -91,3 +91,9 @@ img{
 .anh1.a img{
 	margin-left: 48px;
 }
+.right{
+	order: 2;
+}
+.left{
+	order: 1;
+}
