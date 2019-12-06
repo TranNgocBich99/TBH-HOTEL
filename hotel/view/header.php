@@ -11,6 +11,7 @@
  	<link rel="stylesheet" href="<?php ue_assets('css/intro.css') ?>">
  	<link rel="stylesheet" href="<?php ue_assets('css/style.css') ?>">
  	<link rel="stylesheet" href="<?php ue_assets('css/style1.css') ?>">
+     
  	<script>
         var site_url = '<?php echo SITEURL; ?>';
     </script>
@@ -57,7 +58,7 @@
     					<a class="nav-link me " href="<?php echo SITEURL . 'introduce/index'; ?>"><b>Giới thiệu</b>  <span class="sr-only">(current)</span></a>
     				</li>
     				<li class="nav-item ha">
-    					<a class="nav-link me" href="#"><b>Phòng nghỉ</b></a>
+    					<a class="nav-link me" href="<?php echo SITEURL . 'category/index'; ?>"><b>Phòng nghỉ</b></a>
     					<div class="mndc">
     						<ul class="itemaa">
     						<li><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b>SUPERIOR</b></a></li>

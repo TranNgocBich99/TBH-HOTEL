@@ -8,5 +8,8 @@ class Category extends Base_controller{
 		$data = $this->model->getCategoryByID($cate_id);
 		$this->loadView('category/detail', array('res' => $data));
 	}
+	public function index() {
+		$this->loadView('category/index');
+	}
 
 }

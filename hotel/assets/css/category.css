@@ -1,0 +1,93 @@
+*{margin:0;padding:0; }
+ .header{
+ 	font-family: 'Playfair Display', serif;
+ }
+
+.content1 img{
+	width: 100%;
+	height: 600px;
+	margin-top: -50px;
+}
+img{
+	width: 100%;
+}
+.gioithieu{
+	font-size: 17px;
+    line-height: 28px;
+    color: #5e5e5e;
+    font-family: 'Playfair Display', serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.cau h1{
+	font-family: 'Playfair Display', serif;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+.img11{
+	margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.haha{
+	color: #daa520;
+	font-size: 17px;
+    line-height: 28px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.hihi{
+	color: #5e5e5e;
+	font-size: 17px;
+    line-height: 28px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    
+    margin-left: 150px;
+}
+.but.a{
+	margin-top: 30px;
+	width: 150px;
+	
+}
+.but.a b{
+	font-size: 15px!important;
+}
+/*phong nghi*/
+
+.content1a{
+    font-family: 'Playfair Display', serif;
+    padding-top: 30px;
+}
+.content1a h1{
+	color: black;
+	padding-bottom: 20px;
+}
+.contentpn, .sang{
+	font-size: 17px;
+	color: #5e5e5e;
+	padding-bottom: 20px;
+}
+.content1b{
+	margin-top: 50px;
+}
+.chiacot{
+	display: flex;
+	
+	color: #5e5e5e;
+	font-family: 'Playfair Display', serif;
+}
+.anh1{
+	width: 50%;
+}
+.ct1{
+	width: 45%;
+	margin-left: 20px;
+	font-size: 17px;
+	margin-top: 80px;
+}
+.anh1.a img{
+	margin-left: 48px;
+}
