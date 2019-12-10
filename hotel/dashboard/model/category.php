@@ -17,6 +17,11 @@ class Category_Model extends Base_Model{
 		return $result;
 		
 	}
+	public function delete($category_id){
+		$sql = "DELETE FROM room_category WHERE category_id = $category_id";
+		$query = mysqli_query($this->conn, $sql);
+		return $query;
+	}
 }
 
 ?>
