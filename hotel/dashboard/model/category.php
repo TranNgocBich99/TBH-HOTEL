@@ -22,6 +22,11 @@ class Category_Model extends Base_Model{
 		$query = mysqli_query($this->conn, $sql);
 		return $query;
 	}
+	public function add($data){
+		$sql = "INSERT INTO room_category(category_name, description, thumb) VALUES('{$data['category_name']}', '{$data['description']}','{$data['thumb']}')";
+		$query = mysqli_query($this->conn, $sql);
+		return $query;
+	}
 }
 
 ?>

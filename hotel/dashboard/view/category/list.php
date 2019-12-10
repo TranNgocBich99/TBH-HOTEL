@@ -1,9 +1,9 @@
 
 <div class="table-room ">
-	<h3 class="mb-4">Danh mục <a href="<?php echo ue_get_admin_link('room','add'); ?>" class="btn btn-info btn-sm float-right">Thêm mới</a></h3>
+	<h3 class="mb-4">Danh mục <a href="<?php echo ue_get_admin_link('category','add'); ?>" class="btn btn-info btn-sm float-right">Thêm mới</a></h3>
 	<?php
 	if(!empty($res)) {
-		UE_Message::show('room');
+		UE_Message::show('category');
 		?>
 		<table class="table">
 			<thead>
@@ -31,7 +31,7 @@
 		<?php
 	}else{
 		?>
-		<div class="alert alert-warning">Không có quyển sách nào.</div>
+		<div class="alert alert-warning">Không có danh mục nào.</div>
 		<?php
 	}
 	?>

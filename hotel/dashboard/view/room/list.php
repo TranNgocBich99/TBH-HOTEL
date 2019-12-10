@@ -36,7 +36,7 @@
 		<?php
 	}else{
 		?>
-		<div class="alert alert-warning">Không có quyển sách nào.</div>
+		<div class="alert alert-warning">Không có phòng nào.</div>
 		<?php
 	}
 	?>

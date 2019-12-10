@@ -18,6 +18,38 @@ class Category extends Base_controller{
 		}
 		header('location: ' . ue_get_admin_link('category', 'listCategory'));
 	}
+	public function add(){
+		$err = array();
+		if(isset($_POST['add_category'])){
+			
+			$name = UE_Input::post('category_name');
+			if(empty($name)){
+				$err['category_name'] = "Tên danh mục không được để trống";
+			}
+			if(!empty($err)){
+				$err_str = implode('<br />', $err);
+				UE_Message::add($err_str, 'message', 'danger');
+			}else{
+				$post_data = $_POST;
+
+				/*$current_user = ue_get_user_data();
+				$post_data['author'] = $current_user['id'];*/
+
+				$thumb = $this->uploadFile();
+				if(!empty($thumb)){
+					$post_data['thumb'] = 'uploads/' . $thumb;
+				}
+
+				$res = $this->model->add($post_data);
+				if($res > 0){
+					UE_Message::add('Thêm mới thành công', 'message', 'success');
+				}else{
+					UE_Message::add('Thêm mới thất bại', 'message', 'danger');
+				}
+			}
+		}
+		$this->loadView('category/addCategory');
+	}
 	public function uploadFile(){
 		if(!empty($_FILES) && isset($_FILES['thumb'])){
 			$uploadDir = SITEPATH . 'assets/uploads/';
