@@ -1,4 +1,4 @@
-<h3>Tên danh mục</h3>
+<h3>Thêm danh mục</h3>
 <form action="" method="post" name ="myform" enctype="multipart/form-data" mb-5>
   <div class="form-group">
     <label for="exampleInputEmail1" class="label mt-5">Ảnh</label>

@@ -32,7 +32,8 @@ class Room_Model extends Base_Model{
 		/*dd($sql);die;*/
 		$query = mysqli_query($this->conn, $sql);
 		return $query;
-	}public function getRoomByID($room_id){
+	}
+	public function getRoomByID($room_id){
 		$sql = "SELECT * FROM room WHERE room_id = {$room_id}";
 		$query = mysqli_query($this->conn, $sql);
 		$result = array();

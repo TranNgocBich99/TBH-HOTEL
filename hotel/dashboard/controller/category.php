@@ -75,4 +75,31 @@ class Category extends Base_controller{
 		    }
 		}
 	}
+	public function edit($category_id){
+		if(isset($_POST['edit-category'])){
+			$post_data = $_POST;
+
+			if(isset($_FILES['thumb']) && !empty($_FILES['thumb']['name'])){
+				$thumb = $this->uploadFile();
+				if(!empty($thumb)){
+					$post_data['thumb'] = 'uploads/' . $thumb;
+				}
+			}else{
+				$post_data['thumb'] = $post_data['thumb_temp'];
+			}
+				
+			$res = $this->model->update($category_id, $post_data);
+			if($res > 0){
+				UE_Message::add('Cập nhật thành công', 'category', 'success');
+				header('location: ' . ue_get_admin_link('category', 'listCategory'));
+
+			}else{
+				UE_Message::add('Cập nhật thất bại', 'category', 'warning');
+				header('location: ' . ue_get_admin_link('category', 'listCategory'));
+			}
+		}
+
+		$currentCate = $this->model->getCategoryByID($category_id);
+		$this->loadView('category/edit', array('data' => $currentCate));
+	}
 }
