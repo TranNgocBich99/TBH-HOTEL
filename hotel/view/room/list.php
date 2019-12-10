@@ -5,13 +5,14 @@ if(!empty($res)){
 	<p class="" style="color: #bf0000; font-size: 22px; font-weight: 600; text-align: center;margin-top: 40px;">Danh sách các phòng</p>
 	<?php
 	foreach ($res as $k => $v) {
+		$link_detail = ue_get_link('room', 'detail') . '/' . $v['room_id'];
 	# code...
 	?>
 
 <div class="container">
 <div class="row mt-5 info">
 	<div class="col-sm-3">
-		<img src="<?php echo SITEURL . '/assets/' . $v['thumb']; ?>" width="200px" height="150xp;">
+		<img src="<?php echo SITEURL . '/assets/' . $v['thumb']; ?>" width="200px" height="150px;">
 	</div>
 	<div class="col-sm-5">
 		<p class="room"><?php echo $v['room_name']; ?></p>
@@ -24,7 +25,7 @@ if(!empty($res)){
 		<p class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
 		<div class="des">
 			<ul>
-				<li><p><a href="#">Chi tiết <i class="fas fa-caret-right"></i></a></p></li>
+				<li><p><a href="<?php echo $link_detail; ?>">Chi tiết <i class="fas fa-caret-right"></i></a></p></li>
 				<li><p class="price">Giá: <?php echo ue_format_price($v['price']); ?>đ</p></li>
 			</ul>
 		</div>
