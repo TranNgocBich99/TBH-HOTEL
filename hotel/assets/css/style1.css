@@ -33,8 +33,15 @@ a{
 .info img{
 	cursor: pointer;
 }
+.info .info-room ul.people li {
+	font-weight: 600;
+	color: #016e95;
+}
 .info .des{
 	overflow: hidden;
+}
+.info p.conf{
+	color: #666666;
 }
 .info .des ul li{
 	float: left;
@@ -49,6 +56,9 @@ a{
 	margin-right: 36px;
 	color: #666666;
 }
+.info-detail{
+	border: 3px solid #f4f4f4;
+}
 .info p.room{
 	display: inline-block;
 	color: #2a2a2a;
@@ -61,9 +71,22 @@ a{
 	font-weight: bold;
 	color: #fd566f;
 }
+.info p.price1{
+	margin-top: 7px;
+	font-size: 16px; 
+	font-weight: bold;
+	color: #fd566f;
+}
 .book-room{
 	color: #fff;
 	margin-top: 50px;
+	background-color: #B0A06C;
+	border: 1px solid #B0A06C;
+	float: right;
+}
+.detail-book{
+	color: #fff;
+	margin-top: 0px;
 	background-color: #B0A06C;
 	border: 1px solid #B0A06C;
 	float: right;
