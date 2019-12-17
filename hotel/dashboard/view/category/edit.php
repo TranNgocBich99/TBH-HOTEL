@@ -14,7 +14,7 @@
     <label for="exampleInputEmail2" class="label mt-3">Tên danh mục</label>
     <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Tên phòng" name="category_name" value="<?php echo $data['category_name'] ?>">
      <label for="exampleInputEmail7" class="label mt-3">Mô tả</label>
-    <textarea type="text" class="form-control" id="exampleInputEmail7" rows="5" aria-describedby="emailHelp" placeholder="Mô tả" name="description"><?php echo $data['description'] ?></textarea>
+    <textarea type="text" class="form-control" id="exampleInputEmail7" rows="5" aria-describedby="emailHelp" placeholder="Mô tả" name="description"><?php echo UE_Input::post( 'description', $data['description'] ); ?></textarea>
   </div>
    <br/>
   <button type="submit" class="btn btn-primary mb-10 btn-add" name="edit-category">Sửa</button>

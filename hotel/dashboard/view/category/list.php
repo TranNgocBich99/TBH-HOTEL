@@ -22,7 +22,7 @@
                 <td><?php echo ue_cut_string($v['description']); ?></td>
 				<td>
 					<a href="<?php echo ue_get_admin_link('category', 'edit') . '/' . $v['category_id']; ?>" class="btn btn-info btn-sm">Sửa</a>
-					<a href="<?php echo ue_get_admin_link('category', 'delete') . '/' . $v['category_id']; ?>" class="btn btn-danger btn-sm">Xóa</a>
+					<a href="<?php echo ue_get_admin_link('category', 'delete') . '/' . $v['category_id']; ?>" class="btn btn-danger btn-sm btn-delete">Xóa</a>
 				</td>
 			</tr>
 			<?php } ?>

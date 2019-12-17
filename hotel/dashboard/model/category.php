@@ -18,7 +18,7 @@ class Category_Model extends Base_Model{
 		
 	}
 	public function delete($category_id){
-		$sql = "DELETE FROM room_category WHERE category_id = $category_id";
+		$sql = "DELETE room.*, room_category.* FROM room_category LEFT JOIN room ON room.category_id = room_category.category_id WHERE room_category.category_id = $category_id";
 		$query = mysqli_query($this->conn, $sql);
 		return $query;
 	}

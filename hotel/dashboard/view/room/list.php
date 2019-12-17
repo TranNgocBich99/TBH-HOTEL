@@ -27,7 +27,7 @@
 				<td><?php echo $v['children']; ?></td>
 				<td>
 					<a href="<?php echo ue_get_admin_link('room', 'edit') . '/' . $v['room_id']; ?>" class="btn btn-info btn-sm">Sửa</a>
-					<a href="<?php echo ue_get_admin_link('room', 'delete') . '/' . $v['room_id']; ?>" class="btn btn-danger btn-sm">Xóa</a>
+					<a href="<?php echo ue_get_admin_link('room', 'delete') . '/' . $v['room_id']; ?>" class="btn btn-danger btn-sm btn-delete">Xóa</a>
 				</td>
 			</tr>
 			<?php } ?>
