@@ -7,4 +7,7 @@ class User extends Base_Controller{
 	public function login() {
 		$this->loadView('user/login');
 	}
+	public function register() {
+		$this->loadView('user/register');
+	}
 }
