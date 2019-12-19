@@ -1,0 +1,36 @@
+*{margin:0;padding:0; }
+
+.content{
+ 	font-family: 'Playfair Display', serif;
+ 	font-size: 16px;
+	color: #5e5e5e;
+	
+ }
+ 
+.place input{
+	width: 500px;
+	height: 40px;
+	border: 1px solid #999999;
+	padding-left: 10px;
+
+}
+.dk{
+	padding-top: 25px;
+}
+.email, .pass{
+	padding-left: 35px;
+	margin-top: 30px;
+}
+.repass, .userdn{
+	padding-left: 35px;
+	margin-top: 30px;
+}
+.dky{
+	width: 400px;
+	margin-top: 40px;
+}
+.dkya{
+	border: 1px solid gray;
+	width: 600px;
+	height: 380px;
+}

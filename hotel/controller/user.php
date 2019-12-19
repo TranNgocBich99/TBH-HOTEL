@@ -4,4 +4,7 @@ class User extends Base_Controller{
 		parent::__construct();
 
 	}
+	public function login() {
+		$this->loadView('user/login');
+	}
 }
