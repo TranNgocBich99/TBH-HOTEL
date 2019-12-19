@@ -29,6 +29,21 @@ class Base_Controller{
 			}
 		}
 	}
+	public function loadView1($path = ''){
+
+		$path = 'view/'.$path .'.php';
+		
+		if(file_exists($path)){
+			extract($data);
+			if($includeHF){
+				include "view/header.php";
+			}
+			include $path;
+			if($includeHF){
+				include "view/footer.php";
+			}
+		}
+	}
 
 	public function getMenus($parent_id){
 		if(class_exists('User_Model')){

@@ -61,13 +61,27 @@
     					<a class="nav-link me" href="<?php echo SITEURL . 'category/index'; ?>"><b>Phòng nghỉ</b></a>
     					<div class="mndc">
     						<ul class="itemaa">
+                            <!-- <?php
+
+                                if(!empty($res)){
+                                    foreach ($res as $k => $v) {
+                                        /*echo $v['category_id'];die;*/
+                                        # code...
+                                        ?>
+                                            <li><a href="<?php echo ue_get_link('category', 'detail') . '/' . $v['category_id'] ; ?>"><b><?php echo $v['category_name'] ?></b></a></li>
+
+                                        <?php
+                                    }
+                                }
+                            ?> -->
     						<li><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b>SUPERIOR</b></a></li>
     						<li><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b>DELUXE</b></a></li>
     						<li><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b>PREMIER EXECUTIVE</b></a></li>
     						<li><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b>FINE ART LUXURY SUITE</b></a></li>
-    						<li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b>EXTENSIVE FAMILY</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b>EXTENSIVE FAMILY</b></a></li> -->
     					</ul>
     					</div>
+
     					
     				</li>
     				<li class="nav-item">

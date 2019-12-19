@@ -12,5 +12,10 @@ class Category extends Base_controller{
 		$data = $this->model->getAllCategory();
 		$this->loadView('category/index', array('res' => $data));
 	}
+	public function index1() {
+		$data = $this->model->getAllCategory();
+		$this->loadView1('', array('res' => $data));
+	}
+
 
 }

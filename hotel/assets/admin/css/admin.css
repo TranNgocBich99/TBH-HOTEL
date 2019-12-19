@@ -7,6 +7,7 @@ a.ql{
 }
 nav.menu{
 	border-right: 1px solid #cccccc;
+	height: 100vh;
 }
 ul li.one{
 	margin-top: 60px;
