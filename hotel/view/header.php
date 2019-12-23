@@ -21,17 +21,27 @@
 		<div class="header1">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 tbh">
+					<div class="col-sm-4 tbh">
 						<b>Welcome to TBH Hotel</b>
 					</div>
-					<div class="col-sm-6 phone" >
+					<div class="col-sm-8 phone" >
 						<div class="row plane">
+                            <div class="col-sm-3 tt tk ">
+                                <b>
+                                <a href="<?php echo ue_get_link('user', 'login') ?>">Đăng nhập</a>
+                                </b>
+                            </div>
+                            <div class="col-sm-2 tt tk">
+                                <b>
+                                <a href="<?php echo ue_get_link('user', 'register') ?>">Đăng ký</a>
+                                </b>
+                            </div>
 							<div class="col-sm-3 tt">
 								<b>
 								<i class="fa fa-phone" aria-hidden="true"></i>+84 12 345 678
 								</b>
 							</div>
-							<div class="col-sm-6 bb">
+							<div class="col-sm-4 bb">
 								<b>
 									<i class="fa fa-paper-plane" aria-hidden="true"></i> trangvtrangvbichhue@gmail.com
 								</b>
@@ -78,7 +88,7 @@
     						<li><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b>DELUXE</b></a></li>
     						<li><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b>PREMIER EXECUTIVE</b></a></li>
     						<li><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b>FINE ART LUXURY SUITE</b></a></li>
-    						<li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b>EXTENSIVE FAMILY</b></a></li> -->
+    						<li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b>EXTENSIVE FAMILY</b></a></li>
     					</ul>
     					</div>
 
