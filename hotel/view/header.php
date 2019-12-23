@@ -69,8 +69,8 @@
     				</li>
     				<li class="nav-item ha">
     					<a class="nav-link me" href="<?php echo SITEURL . 'category/index'; ?>"><b>Phòng nghỉ</b></a>
-    					<div class="mndc">
-    						<ul class="itemaa">
+    					<div class="mndc" style="background-color: #727168;">
+    						<ul class="itemaa" >
                             <!-- <?php
 
                                 if(!empty($res)){
@@ -84,11 +84,11 @@
                                     }
                                 }
                             ?> -->
-    						<li><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b>SUPERIOR</b></a></li>
-    						<li><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b>DELUXE</b></a></li>
-    						<li><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b>PREMIER EXECUTIVE</b></a></li>
-    						<li><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b>FINE ART LUXURY SUITE</b></a></li>
-    						<li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b>EXTENSIVE FAMILY</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b style="color: white">SUPERIOR</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b style="color: white">DELUXE</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b style="color: white">PREMIER EXECUTIVE</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b style="color: white">FINE ART LUXURY SUITE</b></a></li>
+    						<li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b style="color: white">EXTENSIVE FAMILY</b></a></li>
     					</ul>
     					</div>
 
