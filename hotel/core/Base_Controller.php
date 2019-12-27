@@ -14,7 +14,6 @@ class Base_Controller{
 
 	public function loadView($path, $data = array(), $includeHF = true){
 		/*echo $path;die;*/
-		$menus = $this->getMenus(0);
 		$path = 'view/'.$path .'.php';
 		
 		if(file_exists($path)){
@@ -42,24 +41,6 @@ class Base_Controller{
 			if($includeHF){
 				include "view/footer.php";
 			}
-		}
-	}
-
-	public function getMenus($parent_id){
-		if(class_exists('User_Model')){
-			$user_model = new User_Model();
-			$parent_menu = $user_model->getMenus($parent_id);
-			
-			foreach ($parent_menu as $k => $v) {
-				$child = $user_model->getMenus($v['id']);
-				if(!empty($child)){
-					$parent_menu[$k]['child'] = $child;
-				}
-			}
-
-			return $parent_menu;
-		}else{
-			return array();
 		}
 	}
 }

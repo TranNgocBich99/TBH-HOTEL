@@ -12,7 +12,7 @@
 	height: 40px;
 	border: 1px solid #999999;
 	padding-left: 10px;
-
+	border-radius: 3px;
 }
 .dk{
 	padding-top: 25px;
@@ -28,6 +28,7 @@
 .dky{
 	width: 400px;
 	margin-top: 40px;
+	margin-bottom: 70px;
 }
 .dkya{
 	border: 1px solid gray;
@@ -38,6 +39,16 @@
 .dkyb{
 	border: 1px solid gray;
 	width: 600px;
-	height: 550px;
+	/*height: 550px;*/
 	margin-top: 50px;
+}
+.warning{
+	color: #bf0000;
+	margin-top: 6px;
+	margin-left: 34px;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
 }
