@@ -23,6 +23,13 @@ class User extends Base_Controller{
 		}
 		$this->loadView('user/login');
 	}
+	public function logout(){
+		if(isset($_SESSION['login'])){
+			unset($_SESSION['login']);
+		}
+		header('location: ' . SITEURL);
+		exit();
+	}
 	public function register() {
 		$val = new UE_Validate();
 		$err = array();
