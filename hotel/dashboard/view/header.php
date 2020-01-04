@@ -50,32 +50,43 @@
 		  </li>
 	</ul>
 </nav>
+<?php
+	$role = ue_get_role();
+
+?>
 <div class="container-fluid">
 	<div class="row">
 		<nav class="col-md-2 d-none d-md-block bg-light sidebar menu">
 			<div class="sidebar-sticky">
 				<ul class="nav flex-column menu1">
+					<?php if($role == '0' || $role == '1'){ ?>
 					<li class="nav-item one">
 						<a class="nav-link active" href="<?php echo ue_get_admin_link('room', 'listRoom'); ?>">
 							Quản lý phòng
 						</a>
 					</li>
-					
+					<?php } ?>
+					<?php if($role == '0'){ ?>
 					<li class="nav-item">
 						<a class="nav-link active" href="<?php echo ue_get_admin_link('category', 'listCategory'); ?>">
 							Quản lý danh mục
 						</a>
 					</li>
+					<?php  } ?>
+					<?php if($role == '0' || $role == '1' ){ ?>
 					<li class="nav-item">
 						<a class="nav-link active" href="<?php echo ue_get_admin_link('user', 'getUser');  ?>">
                             Quản lý tài khoản
 						</a>
 					</li>
+					<?php  } ?>
+					<?php if($role == '0' || $role == '1'){ ?>
 					<li class="nav-item">
 						<a class="nav-link active" href="<?php echo ue_get_admin_link('order', 'listOrder'); ?>">
 							Quản lý hóa đơn
 						</a>
 					</li>
+					<?php  } ?>
 				</ul>
 			</div>
 		</nav>

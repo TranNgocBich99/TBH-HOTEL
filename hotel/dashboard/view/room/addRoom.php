@@ -1,3 +1,10 @@
+<?php
+$role = ue_get_role();
+if(!in_array($role, array(0,1))){
+  header('Location:' . SITEURL);
+  exit();
+}
+?>
 <h3>Thêm phòng</h3>
 <form action="" method="post" name ="myform" enctype="multipart/form-data" mb-5>
   <div class="form-group">

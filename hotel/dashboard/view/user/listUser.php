@@ -1,4 +1,10 @@
-
+<?php
+$role = ue_get_role();
+if(!in_array($role, array(0,1))){
+	header('Location:' . SITEURL);
+	exit();
+}
+?>
 <?php
 	$role = ue_get_role();
 ?>

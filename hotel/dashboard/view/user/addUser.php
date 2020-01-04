@@ -1,6 +1,9 @@
 <?php
-
-?>
+$role = ue_get_role();
+if(!in_array($role, array(0))){
+  header('Location:' . SITEURL);
+  exit();
+}?>
 </br></br>
 <h4 >Thêm người dùng</h4>
 </br>

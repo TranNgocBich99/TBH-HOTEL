@@ -1,3 +1,11 @@
+<?php
+$role = ue_get_role();
+if(!in_array($role, array(0))){
+  header('Location:' . SITEURL);
+  exit();
+}
+?>
+
 <h3>Sửa danh mục</h3>
 <?php
 	if(!empty($data)){

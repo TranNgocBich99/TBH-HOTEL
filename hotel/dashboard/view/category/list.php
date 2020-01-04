@@ -1,4 +1,10 @@
-
+<?php
+$role = ue_get_role();
+if(!in_array($role, array(0))){
+	header('Location:' . SITEURL);
+	exit();
+}
+?>
 <div class="table-room ">
 	<h3 class="mb-4">Danh mục <a href="<?php echo ue_get_admin_link('category','add'); ?>" class="btn btn-info btn-sm float-right">Thêm mới</a></h3>
 	<?php
