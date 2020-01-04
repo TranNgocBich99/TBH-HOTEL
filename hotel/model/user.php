@@ -11,6 +11,18 @@ class User_Model extends Base_Model {
 		$query = mysqli_query($this->conn, $sql);
 		return $query;
 	}
+	public function getUserData($username, $password){
+		$password = md5($password);
+		$sql = "SELECT * FROM guest WHERE username='$username' AND password='$password' LIMIT 1";
+		$query = mysqli_query($this->conn, $sql);
+		$result = array();
+		if(!empty($query) && $query->num_rows > 0){
+			while ($row = mysqli_fetch_assoc($query)){
+				$result[] = $row;
+			}
+		}
+		return $result;
+	}
 	public function email_exists($email){
 		$sql = "SELECT * FROM guest WHERE email = '$email' LIMIT 1";
 

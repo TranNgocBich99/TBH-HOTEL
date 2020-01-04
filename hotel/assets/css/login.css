@@ -33,7 +33,6 @@
 .dkya{
 	border: 1px solid gray;
 	width: 600px;
-	height: 380px;
 	margin-top: 50px;
 }
 .dkyb{
@@ -51,4 +50,18 @@
     color: #3c763d;
     background-color: #dff0d8;
     border-color: #d6e9c6;
+}
+.alert-danger1 {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert1 {
+	/*color: red;*/
+	width: 500px;
+	margin-left: 35px;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }

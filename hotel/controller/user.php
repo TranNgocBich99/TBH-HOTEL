@@ -5,6 +5,22 @@ class User extends Base_Controller{
 
 	}
 	public function login() {
+		if(isset($_POST['login_action'])){
+			$username = UE_Input::post('username');
+			$password = UE_Input::post('password');
+			if(empty($username) || empty($password)){
+				$this->loadView('user/login', array('errors' => 'Tài khoản hoặc Mật khẩu không được trống.'));
+			}else{
+				$user_data = $this->model->getUserData($username, $password);
+				if(!empty($user_data)){
+					$_SESSION['login'] = array_shift($user_data);
+					header('Location: http://localhost/CNPM/hotel/');
+				}else{
+					$this->loadView('user/login', array('errors' => 'Đăng nhập thất bại.'));
+				}
+			}
+			return;
+		}
 		$this->loadView('user/login');
 	}
 	public function register() {
