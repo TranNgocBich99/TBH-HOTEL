@@ -64,10 +64,12 @@ class HOTEL_Admin{
 		);
 
 		$files = array(
+			'model/user',
 			'model/room',
 			'model/category',
 			'controller/admin',
 			'controller/room',
+			'controller/user',
 			'controller/category'
 		);
 		$this->load($config_files);

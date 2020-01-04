@@ -54,7 +54,7 @@
 	<div class="row">
 		<nav class="col-md-2 d-none d-md-block bg-light sidebar menu">
 			<div class="sidebar-sticky">
-				<ul class="nav flex-column">
+				<ul class="nav flex-column menu1">
 					<li class="nav-item one">
 						<a class="nav-link active" href="<?php echo ue_get_admin_link('room', 'listRoom'); ?>">
 							Quản lý phòng
@@ -67,7 +67,7 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="<?php echo $link_user; ?>">
+						<a class="nav-link active" href="<?php echo ue_get_admin_link('user', 'getUser');  ?>">
                             Quản lý tài khoản
 						</a>
 					</li>

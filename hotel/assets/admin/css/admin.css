@@ -9,8 +9,11 @@ nav.menu{
 	border-right: 1px solid #cccccc;
 	height: 100vh;
 }
-ul li.one{
+/*ul li.one{
 	margin-top: 60px;
+}*/
+ul.menu1 {
+	margin-top: 50px;
 }
 .tqt{
 	margin-top: 51px;
