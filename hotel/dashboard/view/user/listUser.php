@@ -1,7 +1,12 @@
+
+<?php
+	$role = ue_get_role();
+?>
 <div class="table-book mt-4">
 	<h3 class="mb-4">Nhân viên <a href="<?php echo ue_get_admin_link('user','add_User'); ?>" class="btn btn-info btn-sm float-right">Thêm mới</a></h3>
 	<?php
 	if(!empty($res)) {
+		$role_data = ue_get_role_data();
 		UE_Message::show('user');
 		?>
 		<table class="table">
