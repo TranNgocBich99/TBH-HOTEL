@@ -9,7 +9,21 @@ if(!function_exists('ue_assets')){
 		
 	}
 }
-
+if(!function_exists('ue_get_role')){
+	function ue_get_role(){
+		$user_data = ue_get_user_data();
+		return $user_data['role'];
+	}
+}
+if(!function_exists('ue_get_role_data')){
+	function ue_get_role_data(){
+		return [
+			'0' => 'Quản trị viên',
+			'1' => 'Nhân viên',
+			'2' => 'Khách hàng'
+		];
+	}
+}
 if(!function_exists('dd')){
 	function dd($arr){
 		echo '<pre style="background: #000; color: #fff; padding: 20px;">';

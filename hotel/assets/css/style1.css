@@ -25,6 +25,7 @@ a{
 .info{
 	padding-bottom: 20px;
 	border-bottom: 1px solid #f4f4f4;
+	padding-top: 20px;
 }
 .info p.star i{
 	color: #ffcc00;
@@ -32,8 +33,15 @@ a{
 .info img{
 	cursor: pointer;
 }
+.info .info-room ul.people li {
+	font-weight: 600;
+	color: #016e95;
+}
 .info .des{
 	overflow: hidden;
+}
+.info p.conf{
+	color: #666666;
 }
 .info .des ul li{
 	float: left;
@@ -41,11 +49,15 @@ a{
 }
 .info .info-room{
 	overflow: hidden;
+	margin-bottom: 12px;
 }
 .info .info-room ul li{
 	float: left;
 	margin-right: 36px;
 	color: #666666;
+}
+.info-detail{
+	border: 3px solid #f4f4f4;
 }
 .info p.room{
 	display: inline-block;
@@ -59,11 +71,29 @@ a{
 	font-weight: bold;
 	color: #fd566f;
 }
+.info p.price1{
+	margin-top: 7px;
+	font-size: 16px; 
+	font-weight: bold;
+	color: #fd566f;
+}
 .book-room{
+	color: #fff;
 	margin-top: 50px;
 	background-color: #B0A06C;
 	border: 1px solid #B0A06C;
 	float: right;
+}
+.detail-book{
+	color: #fff;
+	margin-top: 0px;
+	background-color: #B0A06C;
+	border: 1px solid #B0A06C;
+	float: right;
+}
+button.book-room:hover{
+	color: #fff;
+	background-color: #343a40;
 }
 input{
 	border: none;
@@ -72,6 +102,7 @@ input{
 	
 }
 .cal{
+	background: #f4f4f4;
 	position: relative;
 	display: inline-block;
 	padding: 25px;

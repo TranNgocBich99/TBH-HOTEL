@@ -10,6 +10,9 @@
  .header2{
  	background-color: #eaeef0;
  }
+ .tk a{
+ 	color: #ffffff;
+ }
  .tbh{
  	font-family: 'Playfair Display', serif;
 	color: white;
@@ -47,6 +50,34 @@ button.but{
 	margin-bottom: -10px;
 	margin-right: 30px;
 }
+.ue-dropdown{
+	position: relative;
+}
+ul.dashboard li{
+	padding: 5px 0;
+}
+ul.dashboard{
+	border-radius: 3px;
+	position: absolute;
+	top: 138%;
+	width: 100%;
+	right: 0;
+	width: 180px;
+	background:#6E6D63;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	z-index: 9;
+	padding: 10px 10px;
+	font-weight: 600;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+}
+.ue-dropdown:hover ul.dashboard{
+	top: 138%;
+	opacity: 1;
+	visibility: visible;
+}
 .footer{
 	background: #F7F8F9;
 	border-top: 2px solid #f4f4f4;
@@ -54,6 +85,14 @@ button.but{
 	font-size: 17px;
 	margin-top: 50px;
 	font-family: 'Playfair Display', serif;
+}
+.khungmenu {
+	float: right;
+    margin-top: -30px;
+}
+.khungmenu li form{
+	margin-top: 16px;
+	margin-left: 22px;
 }
 .footer1{
 

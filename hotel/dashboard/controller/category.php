@@ -1,30 +1,30 @@
 <?php
-class Room extends Base_controller{
+class Category extends Base_controller{
 	public function __construct(){
 		parent:: __construct();
 	}
-	public function listRoom(){
-		$data = $this->model->getRoom();
-		$this->loadView('room/list', array('res' => $data));
+	public function listCategory(){
+		$data = $this->model->getCategory();
+		$this->loadView('category/list', array('res' => $data));
 	}
-	public function delete($room_id){
-		if(!empty($room_id)){
-			$res = $this->model->delete($room_id);
+	public function delete($category_id){
+		if(!empty($category_id)){
+			$res = $this->model->delete($category_id);
 			if($res > 0){
-				UE_Message::add('Bạn đã xóa thành công', 'room', 'success');
+				UE_Message::add('Bạn đã xóa thành công', 'category', 'success');
 			}else{
-				UE_Message::add('Đã có lỗi xảy ra', 'room', 'warning');
+				UE_Message::add('Đã có lỗi xảy ra', 'category', 'warning');
 			}
 		}
-		header('location: ' . ue_get_admin_link('room', 'listRoom'));
+		header('location: ' . ue_get_admin_link('category', 'listCategory'));
 	}
 	public function add(){
 		$err = array();
-		if(isset($_POST['add_room'])){
+		if(isset($_POST['add_category'])){
 			
-			$name = UE_Input::post('room_name');
+			$name = UE_Input::post('category_name');
 			if(empty($name)){
-				$err['room_name'] = "Tên phòng không được để trống";
+				$err['category_name'] = "Tên danh mục không được để trống";
 			}
 			if(!empty($err)){
 				$err_str = implode('<br />', $err);
@@ -48,9 +48,7 @@ class Room extends Base_controller{
 				}
 			}
 		}
-		$this->loadModel('Category');
-		$cate_data = $this->model->getCategory();
-		$this->loadView('room/addRoom', array('data' => $cate_data, 'err' => $err));
+		$this->loadView('category/addCategory');
 	}
 	public function uploadFile(){
 		if(!empty($_FILES) && isset($_FILES['thumb'])){
@@ -77,8 +75,8 @@ class Room extends Base_controller{
 		    }
 		}
 	}
-	public function edit($room_id){
-		if(isset($_POST['edit-room'])){
+	public function edit($category_id){
+		if(isset($_POST['edit-category'])){
 			$post_data = $_POST;
 
 			if(isset($_FILES['thumb']) && !empty($_FILES['thumb']['name'])){
@@ -90,21 +88,18 @@ class Room extends Base_controller{
 				$post_data['thumb'] = $post_data['thumb_temp'];
 			}
 				
-			$res = $this->model->update($room_id, $post_data);
+			$res = $this->model->update($category_id, $post_data);
 			if($res > 0){
-				UE_Message::add('Cập nhật thành công', 'room', 'success');
-				header('location: ' . ue_get_admin_link('room', 'listRoom'));
+				UE_Message::add('Cập nhật thành công', 'category', 'success');
+				header('location: ' . ue_get_admin_link('category', 'listCategory'));
 
 			}else{
-				UE_Message::add('Cập nhật thất bại', 'room', 'warning');
-				header('location: ' . ue_get_admin_link('room', 'listRoom'));
+				UE_Message::add('Cập nhật thất bại', 'category', 'warning');
+				header('location: ' . ue_get_admin_link('category', 'listCategory'));
 			}
 		}
 
-		$currentRoom = $this->model->getRoomByID($room_id);
-		$this->loadModel('Category');
-		$cate_data = $this->model->getCategory();
-		$this->loadView('room/edit', array('book' => $currentRoom, 'cate' => $cate_data));
+		$currentCate = $this->model->getCategoryByID($category_id);
+		$this->loadView('category/edit', array('data' => $currentCate));
 	}
 }
-?>

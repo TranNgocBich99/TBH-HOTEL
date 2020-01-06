@@ -68,10 +68,17 @@ class TBHInit{
 		);
 
 		$files = array(
+			'model/book',
+			'model/room',
+			'model/category',
+			'model/user',
+			'controller/user',
 			'controller/hotel',
 			'controller/introduce',
 			'controller/endow',
-			'controller/book'
+			'controller/book',
+			'controller/category',
+			'controller/room'
 		);
 		$this->load($config_files);
 		$this->load($helper_files);
