@@ -25,6 +25,7 @@ class User extends Base_Controller{
 	}
 	public function logout(){
 		if(isset($_SESSION['login'])){
+			unset($_SESSION['hotel_cart']);
 			unset($_SESSION['login']);
 		}
 		header('location: ' . SITEURL);

@@ -134,6 +134,9 @@
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Tìm</button>
                         </form>
                     </li>
+                    <li>
+                        <a href="<?php echo ue_get_link('cart', 'detail') ?>" class="cart"><i class="fas fa-hospital"></i></a>
+                    </li>
                 </ul>
                         </div>
                     </div>
