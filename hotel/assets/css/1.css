@@ -232,3 +232,15 @@ img{
 	font-family: 'Playfair Display', serif;
 	margin-top: 12px;
 }
+.giua{
+	position: relative;
+	transition: 2s;
+	float: left;
+	animation: anha 2s forwards;
+	animation-delay:0.5s;
+	opacity: 0;
+}
+@-webkit-keyframes anha{
+	0%{top: 0px;opacity: 0;}
+	100%{top:100px;opacity: 1;}
+}
