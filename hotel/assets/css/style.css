@@ -54,3 +54,51 @@ p{
 	height: 370px;
 	background: transparent url(../images/Suite_17.jpg) center center/cover no-repeat;
 }
+.cart-table{
+	width: 100%;
+	margin-left: 100px;
+}
+.cart-table table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+.cart-table table tr{
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.cart-table table tr th{
+	padding: 7px 10px;
+}
+
+.cart-table table tr td{
+	padding: 7px 10px;
+	width:  100px;
+}
+.list-product{
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+}
+form button.cn{
+	margin-left: 100px;
+	background: #007bff;
+	color: #fff;
+	border: 1px solid #007bff;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+.total-price{
+	margin-left: 100px;
+	font-weight: bold;
+	color: red;
+}
+button.tt{
+	background: #007bff;
+	color: #fff;
+	border: 1px solid #007bff;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin-top: 10px;
+}

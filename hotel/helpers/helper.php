@@ -80,10 +80,10 @@ if(!function_exists('ue_format_price')){
 
 if(!function_exists('ue_get_cart_total_price')){
 	function ue_get_cart_total_price(){
-		$cart = UE_Input::get_session('cart');
+		$cart = UE_Input::get_session('hotel_cart');
 		$total_price = 0;
 		foreach ($cart as $k => $v){
-			$total_price += ($v['price'] * $v['number']);
+			$total_price += $v['price'] ;
 		}
 		return $total_price;
 	}

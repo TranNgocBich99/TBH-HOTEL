@@ -74,6 +74,7 @@ class TBHInit{
 			'model/user',
 			'controller/user',
 			'controller/hotel',
+			'controller/cart',
 			'controller/introduce',
 			'controller/endow',
 			'controller/book',
