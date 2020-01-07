@@ -26,6 +26,8 @@
   </ul>
 
 <h1>3. Hướng dẫn sử dụng và cài đặt</h1>
+  <ul>Cài đặt SublimeText3 </ul>
+  <ul>Cài đặt Xampp </ul>
 <h1>4. Thành viên trong nhóm </h1>
   <ul>
   <li>Trần Ngọc Bích </li>
