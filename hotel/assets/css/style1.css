@@ -79,7 +79,8 @@ a{
 }
 .book-room{
 	color: #fff;
-	margin-top: 50px;
+	margin-top: -20px;
+	/*margin-top: 50px;*/
 	background-color: #B0A06C;
 	border: 1px solid #B0A06C;
 	float: right;

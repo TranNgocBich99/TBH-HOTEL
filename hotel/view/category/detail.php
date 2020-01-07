@@ -31,7 +31,10 @@ if(!empty($res)){
 		
 	</div>
 	<div class="col-sm-4">
-		<button type="button" class="btn btn-dark book-room">Đặt phòng</button>
+		<form action="<?php echo ue_get_link('cart', 'add_cart'); ?>" method="POST">
+            <input type="hidden" name="room_id" value="<?php echo $v['room_id']; ?>" />
+			<button  type="submit" class="buy-book btn btn-dark book-room" name="add_to_cart" value="1">Đặt phòng</button>
+		</form>
 	</div>
 </div>
  </div>

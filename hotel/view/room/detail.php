@@ -20,7 +20,12 @@ if(!empty($res)){
 		<div class="des">
 			<ul>
 				<li><p class="price1">Giá: <?php echo ue_format_price($res['price']); ?></p></li>
-				<li><p><button type="button" class="btn btn-dark book-room detail-book">Đặt phòng</button></p></li>
+				<li><p>
+					<form action="<?php echo ue_get_link('cart', 'add_cart'); ?>" method="POST">
+			            <input type="hidden" name="room_id" value="<?php echo $v['room_id']; ?>" />
+						<button  type="submit" class="buy-book btn btn-dark book-room" name="add_to_cart" value="1">Đặt phòng</button>
+					</form>
+				</li>
 			</ul>
 		</div>
 		
