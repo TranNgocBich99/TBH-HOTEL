@@ -26,29 +26,14 @@ class Cart extends Base_Controller {
 
 	public function remove(){
 		if(ue_is_login()){
-			$book_id = UE_Input::get('book_id');
+			$book_id = UE_Input::get('room_id');
 			if(!empty($book_id)){
-				if(isset($_SESSION['cart']) && isset($_SESSION['cart'][$book_id])){
-					unset($_SESSION['cart'][$book_id]);//remove theo id của cart (theo id của sách)
+				if(isset($_SESSION['hotel_cart']) && isset($_SESSION['hotel_cart'][$book_id])){
+					unset($_SESSION['hotel_cart'][$book_id]);//remove theo id của cart (theo id của phòng)
 				}
 			}
 			header('location: ' . ue_get_link('cart', 'detail'));
 		}
 	}
 
-	public function update(){
-		if(isset($_POST['update_cart'])){
-			$number = UE_Input::post('number');
-			$book_id = UE_Input::post('book_id');
-			$cart = UE_Input::get_session('cart');
-			if(!empty($book_id)) {
-				foreach ( $book_id as $k => $v ) {
-					if ( isset( $cart[ $v ] ) ) {
-						$_SESSION['cart'][ $v ]['number'] = $number[ $k ];
-					}
-				}
-			}
-		}
-		header('location: ' . ue_get_link('cart', 'detail'));
-	}
 }

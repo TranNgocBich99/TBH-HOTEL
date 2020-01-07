@@ -37,7 +37,6 @@ if(!empty($res)){
 		$i++;
 	}
 	echo '</table></div>';
-	echo '<button type="submit" name="update_cart" class= "cn">Cập nhật</button>';
     echo '</form>';
 
 	?>
