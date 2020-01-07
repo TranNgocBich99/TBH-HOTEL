@@ -12,7 +12,7 @@
 						<div class="caption" >
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
-								<h1 class = "giua">TBH HOTEL</h1>
+								<h1 class = "giua"></h1>
 							</div>
 						</div>
 				</div>
@@ -21,7 +21,7 @@
 						<div class="caption" >
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
-								<h1 class = "giua">TBH HOTEL</h1>
+								<h1 class = "giua"></h1>
 							</div>
 						</div>
 				</div>
@@ -30,7 +30,7 @@
 						<div class="caption" >
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
-								<h1 class = "giua">TBH HOTEL</h1>
+								<h1 class = "giua"></h1>
 							</div>
 						</div>
 						
