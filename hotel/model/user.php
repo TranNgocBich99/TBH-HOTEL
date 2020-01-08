@@ -7,7 +7,7 @@ class User_Model extends Base_Model {
 	public function add_user($data){
 		$password = md5($data['password']);
 		
-		$sql = "INSERT INTO guest (username, email, password,  role) VALUES ('{$data['username']}','{$data['email']}', '{$password}', '1')";
+		$sql = "INSERT INTO guest (username, email, password,  role) VALUES ('{$data['username']}','{$data['email']}', '{$password}', '2')";
 		$query = mysqli_query($this->conn, $sql);
 		return $query;
 	}

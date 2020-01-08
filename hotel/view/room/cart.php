@@ -58,7 +58,7 @@ if(!empty($res)){
     ?>
     <div class="message">
     <?php
-	echo 'Không có quyển sách nào trong giỏ hàng';
+	echo 'Bạn chưa đặt phòng nào!';
     ?>
     </div>
 <?php
