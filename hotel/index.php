@@ -72,6 +72,7 @@ class TBHInit{
 			'model/room',
 			'model/category',
 			'model/user',
+			'model/order',
 			'controller/user',
 			'controller/hotel',
 			'controller/cart',
@@ -79,6 +80,7 @@ class TBHInit{
 			'controller/endow',
 			'controller/book',
 			'controller/category',
+			'controller/order',
 			'controller/room'
 		);
 		$this->load($config_files);
