@@ -79,7 +79,7 @@
 								<div class="gioithieu">Sang trọng & Quyến rũ</div>
 							</div>
 							<div class="col-sm-6">
-								<div class="gioithieu a text-right"><a href="">Xem tất cả các phòng</a></div>
+								<div class="gioithieu a text-right"><a href="<?php echo SITEURL . 'category/index'; ?>">Xem tất cả các phòng</a></div>
 							</div>
 						</div>
 					</div>

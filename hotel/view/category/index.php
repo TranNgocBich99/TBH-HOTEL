@@ -34,7 +34,7 @@
 					<div class="ct1">
 						<h2><?php echo $v['category_name']; ?></h2>
 						<div><?php echo $v['description']; ?></div>
-						<div class=""><a href=""><button type="button" class="btn btn but a"><b>TÌM HIỂU THÊM</b> </button></a></div>
+						
 					</div>
 				</div>
 			</div>

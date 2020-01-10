@@ -144,3 +144,10 @@ hr{
 .btnroom{
 	margin-top: 60px;
 }
+.message{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 50px;
+	color: #bf0000;
+}
