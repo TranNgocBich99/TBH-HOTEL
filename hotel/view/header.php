@@ -113,10 +113,10 @@
                                     }
                                 }
                             ?> -->
-                            <li><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b style="color: white">SUPERIOR</b></a></li>
-                            <li><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b style="color: white">DELUXE</b></a></li>
-                            <li><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b style="color: white">PREMIER EXECUTIVE</b></a></li>
-                            <li><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b style="color: white">FINE ART LUXURY SUITE</b></a></li>
+                            <li style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b style="color: white; margin-left: 10px;">SUPERIOR</b></a></li>
+                            <li style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b style="color: white; margin-left: 10px;">DELUXE</b></a></li>
+                            <li style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b style="color: white; margin-left: 10px;">PREMIER EXECUTIVE</b></a></li>
+                            <li style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b style="color: white; margin-left: 10px;">FINE ART LUXURY SUITE</b></a></li>
                             <li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b style="color: white">EXTENSIVE FAMILY</b></a></li>
                         </ul>
                         </div>
