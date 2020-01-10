@@ -28,6 +28,12 @@
 <h1>3. Hướng dẫn sử dụng và cài đặt</h1>
   <ul>Cài đặt SublimeText3 </ul>
   <ul>Cài đặt Xampp </ul>
+  <ul>Hướng dẫn sử dụng
+  <li>Quản lý khách sạn TBH Hotel mang đến cho người dùng nhiều lợi ích trong việc quản lý khách sạn. Quản trị viên dễ dàng quản lý, xem thông tin, kiểm tra phòng trống từ đó mang lại năng suất, hiệu quả cao hơn trong công việc. Khách hàng đặt phòng cũng thân thiện hơn, có thể đặt phòng trực tiếp hoặc gián tiếp. TBH Hotel luôn luôn đổi mới phù hợp với yêu cầu, lựa chọn của khách hàng</li>
+  <li>Quản trị viên: Thêm, sửa, xóa phòng, danh mục, tài khoản, hóa đơn và quản lý phòng trống </li>
+  <li>Nhân viên: Thêm sửa xóa phòng, xem thông tin người dùng, quản lý phòng trống</li>
+  <li>Xem thông tin các phòng, danh mục; Tìm kiếm phòng; Đặt phòng và Hơn nữa là đóng góp ý kiến, nhận xét về TBH Hotel sau những trải nghiệm đầy thú vị</li>
+</ul>
 <h1>4. Thành viên trong nhóm </h1>
   <ul>
   <li>Trần Ngọc Bích </li>
