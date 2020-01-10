@@ -11,6 +11,7 @@
 
 	<!-- Bootstrap core CSS -->
 	<link href="<?php echo SITEURL; ?>assets/admin/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="<?php echo SITEURL; ?>assets/admin/plugins/bootstrap/js/bootstrap.js" rel="stylesheet">
 	<link href="<?php echo SITEURL; ?>assets/plugins/fontawesome/css/all.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="<?php ue_assets('images/logo2.png') ?>">
 	<link rel="stylesheet" href="<?php echo SITEURL; ?>assets/admin/css/admin.css">

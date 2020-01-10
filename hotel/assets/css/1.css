@@ -33,6 +33,12 @@ button.but{
 	font-size: 16px;
 
 }
+/*.itemaa{
+	background-color: blue!important;
+}
+.itemaa:hover{
+	background-color: blue;
+}*/
 .but:hover{
 	color: white;
 	background-color: #000000b5;
@@ -152,6 +158,10 @@ ul.dashboard{
 }
 .itemaa{
 	list-style: none;
+	cursor: pointer;
+}
+.itemaa: hover li a b{
+	background-color: blue;
 }
 .itemaa li a{
 	
@@ -171,6 +181,9 @@ ul.dashboard{
 	padding-left: 10px;
 	margin-top: 10px;
 	transition: 0.5s;
+}
+.item_room:hover{
+	background-color: #464640;
 }
 /*header footer*/
 
@@ -233,10 +246,7 @@ img{
 	font-family: 'Playfair Display', serif;
 	margin-top: 12px;
 }
-.giua .text_2{
-	margin-left: -380px!important;
-	padding-top: 10px;
-}
+
 .giua{
 	position: relative;
 	transition: 2s;

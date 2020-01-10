@@ -13,7 +13,7 @@
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
 								<h1 class = "giua">TBH-HOTEL
-									<div class="text_2">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
+									<div class="text_2" style="margin-left: -380px">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
 								</h1>
 							</div>
 						</div>
@@ -24,7 +24,7 @@
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
 								<h1 class = "giua">TBH-HOTEL
-								<div class="text_2">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
+								<div class="text_2" style="margin-left: -380px">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
 								</h1>
 							</div>
 						</div>
@@ -35,11 +35,10 @@
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
 								<h1 class = "giua">TBH-HOTEL
-								<div class="text_2">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
+								<div class="text_2" style="margin-left: -380px">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
 								</h1>
 							</div>
 						</div>
-						
 				</div>
 		
 			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
