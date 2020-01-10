@@ -26,10 +26,10 @@
                     </form>
 				</div>
 				<div class="col-sm-6">
-					<form method="GET">
+					<form method="GET" action="<?php echo ue_get_link('room', 'search'); ?>">
 						<div class="search">
-							<input class="find" type="text" name="search" placeholder="Nhập từ tìm kiếm...">
-							<button><i class="fas fa-search"></i></button>
+							<input class="find" type="search" name="s" placeholder="Nhập từ tìm kiếm..." value="<?php echo isset($_GET['s']) ? $_GET['s'] : ''; ?>">
+							<button type="submit"><i class="fas fa-search"></i></button>
 						
 						</div>
 					</form>
