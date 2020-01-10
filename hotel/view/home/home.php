@@ -8,29 +8,35 @@
 			</ol>
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-						<img src="assets/images/2.jpg" style="width: 100%;height: 600px; position: relative;">
+						<img src="assets/images/2.jpg" alt="First slide" style="width: 100%;height: 600px">
 						<div class="caption" >
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
-								<h1 class = "giua">TBH-HOTEL</h1>
+								<h1 class = "giua">TBH-HOTEL
+									<div class="text_2">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
+								</h1>
 							</div>
 						</div>
 				</div>
 				<div class="item">
-						<img src="assets/images/1.jpg" style="width: 100%;height: 600px; position: relative;"  >
+						<img src="assets/images/1.jpg" alt="First slide" style="width: 100%;height: 600px; position: relative;"  >
 						<div class="caption" >
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
-								<h1 class = "giua">TBH-HOTEL</h1>
+								<h1 class = "giua">TBH-HOTEL
+								<div class="text_2">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
+								</h1>
 							</div>
 						</div>
 				</div>
 				<div class="item">
-						<img src="assets/images/3.jpg" style="width: 100%;height: 600px; position: relative;">
+						<img src="assets/images/3.jpg" alt="First slide" style="width: 100%;height: 600px; position: relative;">
 						<div class="caption" >
 							<div class="container text-left" style="position: absolute; color: white;" >
 								
-								<h1 class = "giua">TBH-HOTEL</h1>
+								<h1 class = "giua">TBH-HOTEL
+								<div class="text_2">NÉT ĐẸP TIỀM ẨN CỦA VÙNG ĐẤT SƠN THỦY HỮU TÌNH</div>
+								</h1>
 							</div>
 						</div>
 						

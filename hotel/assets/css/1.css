@@ -233,6 +233,10 @@ img{
 	font-family: 'Playfair Display', serif;
 	margin-top: 12px;
 }
+.giua .text_2{
+	margin-left: -380px!important;
+	padding-top: 10px;
+}
 .giua{
 	position: relative;
 	transition: 2s;
@@ -243,7 +247,7 @@ img{
 }
 @-webkit-keyframes anha{
 	0%{top: 0px;opacity: 0;}
-	100%{top:100px;opacity: 1;}
+	100%{top:70px;opacity: 1;}
 }
 li a.cart{
 	margin-top: 10px;
