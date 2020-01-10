@@ -28,7 +28,7 @@ if(!function_exists('dd')){
 	function dd($arr){
 		echo '<pre style="background: #000; color: #fff; padding: 20px;">';
 		print_r($arr);
-		echo '</pre>';die;
+		echo '</pre>';
 	}
 }
 if(!function_exists('ue_cut_string')){

@@ -7,9 +7,12 @@
 	<div class="container mt-5">
 		<p>98 phòng nghỉ tại khách sạn TBH Hotel được thiết kế với gam màu trầm ấm áp, điểm vào đó những mảng gốm mosaic độc đáo, các vật dụng mỹ nghệ tinh xảo cùng hướng nhìn đồng lúa uốn lượn bên dãy núi tuyệt đẹp, gợi lên không gian sống của những gia đình vương giả xưa. Ngoài ra, bộ chăn, ga, gối được làm thủ công và có chất liệu 100% cotton satin chất lượng cao hứa hẹn sẽ đem lại cho du khách những giấc ngủ thật ngon và sâu.</p>
 		
-		<div class="calendar">
+		<div class="calendar" id="message_addcart">
 			<p class="" style="color: #bf0000; font-size: 22px; font-weight: 600;">Chọn lịch đặt phòng</p>
 			<hr>
+
+			<?php UE_Message::show('message_addcart'); ?>
+
 			<div class="row">
 				<div class="col-sm-6">
                     <div id="check-availability"></div>
@@ -77,6 +80,8 @@
 			<div class="col-sm-4">
 				<form action="<?php echo ue_get_link('cart', 'add_cart'); ?>" method="POST">
 		            <input type="hidden" name="room_id" value="<?php echo $v['room_id']; ?>" />
+		             <input type="hidden" name="check_in" value="<?php echo $check_in ?>" />
+		              <input type="hidden" name="check_out" value="<?php echo $check_out ?>" />
 					<button  type="submit" class="buy-book btn btn-dark book-room btnroom" name="add_to_cart" value="1">Đặt phòng</button>
 				</form>
 			</div>

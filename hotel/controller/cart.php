@@ -7,16 +7,27 @@ class Cart extends Base_Controller {
 	public function add_cart(){
 		if(ue_is_login()){
 			if(isset($_POST['add_to_cart'])){
-				$book_id = UE_Input::post('room_id');
-				$this->loadModel('Room');
-				$book_data = $this->model->getRoomByID($book_id);
-				if(!empty($book_data)){			
-					$_SESSION['hotel_cart'][$book_data['room_id']] = $book_data;
-				}
+				$check_in = UE_Input::post('check_in');
+				$check_out = UE_Input::post('check_out');
+
+				if(!empty($check_in) && !empty($check_out)){
+					$book_id = UE_Input::post('room_id');
+					$this->loadModel('Room');
+					$book_data = $this->model->getRoomByID($book_id);
+					if(!empty($book_data)){			
+						$_SESSION['hotel_cart'][$book_data['room_id']] = $book_data;
+						$_SESSION['hotel_cart'][$book_data['room_id']]['check_in'] = $check_in;
+						$_SESSION['hotel_cart'][$book_data['room_id']]['check_out'] = $check_out;
+
+					}
+				}else{
+					UE_Message::add('Bạn cần chọn ngày để đặt phòng.', 'message_addcart', 'warning');
+					header('location: ' . ue_get_link('book', 'index') . '#message_addcart');exit();
+				}				
 			}
-			header('location: ' . ue_get_link('cart', 'detail'));
+			header('location: ' . ue_get_link('cart', 'detail'));exit();
 		}else {
-			header('location: ' . ue_get_link('user', 'login'));
+			header('location: ' . ue_get_link('user', 'login'));exit();
 		}
 	}
 

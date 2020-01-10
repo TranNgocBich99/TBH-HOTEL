@@ -15,8 +15,9 @@ if(!empty($res)){
     <tr>
         <th>STT</th>
         <th>Ảnh</th>
-        <th>Sách</th>
+        <th>Phòng</th>
         <th>Giá</th>
+        <th>Ngày đặt</th>
         <th></th>
     </tr>
     <?php
@@ -29,6 +30,12 @@ if(!empty($res)){
         <td><a href="<?php echo $link_detail; ?>"><img src="<?php echo SITEURL; ?>assets/<?php echo $value['thumb']; ?>" width="50" height="50"></a></td>
         <td><a href="<?php echo $link_detail; ?>"><?php echo $value['room_name']; ?></a></td>
         <td><?php echo ue_format_price($value['price']); ?></td>
+        <td>
+            <?php 
+            echo $value['check_in'] . '<br />' . $value['check_out']; 
+            ?>
+                
+            </td>
         <td>
             <a href="<?php echo ue_get_link('cart', 'remove') . '&room_id=' . $value['room_id']; ?>" class="delete-book"><i class="fa fa-trash"></i></a>
         </td>
