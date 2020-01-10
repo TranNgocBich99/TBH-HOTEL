@@ -83,6 +83,7 @@ class User extends Base_Controller{
 				$res = $this->model->add_user($post_data);
 				if($res > 0){
 					UE_Message::add('Đăng ký thành công', 'message', 'success');
+					header('location: ' . SITEURL);
 				}else{
 					UE_Message::add('Đăng ký thất bại', 'message', 'danger');
 				}
