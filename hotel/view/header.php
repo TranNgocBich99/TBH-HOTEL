@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title> Trang Chủ </title>
+    <title> TBH-HOTEL </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <link rel="stylesheet" href="<?php ue_assets('bootstrap/css/bootstrap.css') ?>">
@@ -113,11 +113,11 @@
                                     }
                                 }
                             ?> -->
-                            <li style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b style="color: white; margin-left: 10px;">SUPERIOR</b></a></li>
-                            <li style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b style="color: white; margin-left: 10px;">DELUXE</b></a></li>
-                            <li style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b style="color: white; margin-left: 10px;">PREMIER EXECUTIVE</b></a></li>
-                            <li style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b style="color: white; margin-left: 10px;">FINE ART LUXURY SUITE</b></a></li>
-                            <li><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b style="color: white">EXTENSIVE FAMILY</b></a></li>
+                            <li class="item_room" style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/1'; ?>"><b style="color: white; margin-left: 10px;">SUPERIOR</b></a></li>
+                            <li class="item_room" style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/2'; ?>"><b style="color: white; margin-left: 10px;">DELUXE</b></a></li>
+                            <li class="item_room" style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/3'; ?>"><b style="color: white; margin-left: 10px;">PREMIER EXECUTIVE</b></a></li>
+                            <li class="item_room" style="border-bottom: 1px solid white; margin-left: -10px;"><a href="<?php echo SITEURL . 'category/detail/4'; ?>"><b style="color: white; margin-left: 10px;">FINE ART LUXURY SUITE</b></a></li>
+                            <li class="item_room" style="margin-left: -10px";><a href="<?php echo SITEURL . 'category/detail/5'; ?>"><b style="color: white; margin-left: 10px; ">EXTENSIVE FAMILY</b></a></li>
                         </ul>
                         </div>
 
