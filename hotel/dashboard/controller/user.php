@@ -33,19 +33,4 @@ class User extends Base_Controller{
 		}
 		$this->loadView('user/addUser');
 	}
-	public function edit($user_id){
-		if(isset($_POST['username'])){
-			$post_data = $_POST;
-
-			$res = $this->model->update($user_id, $post_data);
-			if($res > 0){
-				UE_Message::add('Cập nhật thành công', 'user', 'success');
-			}else{
-				UE_Message::add('Cập nhật thất bại', 'user', 'warning');
-			}
-		}
-
-		$currentUser = $this->model->getUserById($user_id);
-		$this->loadView('user/edit', array('user' => $currentUser));
-	}
 }
