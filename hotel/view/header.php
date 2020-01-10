@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title> Example </title>
+    <title> Trang Chủ </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <link rel="stylesheet" href="<?php ue_assets('bootstrap/css/bootstrap.css') ?>">
