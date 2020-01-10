@@ -9,6 +9,7 @@
 				<div class="col-sm-6">
 					<img src="<?php ue_assets('images/logo.png') ?>" class = "logo">
 					<div>Mời quý khách hãy đến với TBH Hotel để cảm nhận sự bình yên và thư thái</div>
+					<div class="fb-comments" data-href="https://www.facebook.com/TBHHOTEL/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
 				</div>
 				<div class="col-sm-6 hotea">
 					<div class = "ho">
@@ -19,8 +20,12 @@
 					<div class = "foo">Điện thoại: +84 12 345 678</div>
 					<br>
 					<div class = "foo">Email: trangvtrangvbichhue@gmail.com</div>
+					<div class="fb-page" 
+					  data-href="https://www.facebook.com/TBHHOTEL/"
+					  data-width="380" 
+					  data-hide-cover="false"
+					  data-show-facepile="false"></div>
 				</div>
-				<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
 			</div>
 		</div>
 	</div>
