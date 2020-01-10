@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="<?php ue_assets('css/intro.css') ?>">
     <link rel="stylesheet" href="<?php ue_assets('css/style.css') ?>">
     <link rel="stylesheet" href="<?php ue_assets('css/style1.css') ?>">
-     
+    <link rel="stylesheet" href="<?php ue_assets('css/main.css') ?>">
+
     <script>
         var site_url = '<?php echo SITEURL; ?>';
     </script>
     <div id="fb-root"></div>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0&appId=1897724123706019&autoLogAppEvents=1"></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0&appId=1897724123706019&autoLogAppEvents=1"></script>
 </head>

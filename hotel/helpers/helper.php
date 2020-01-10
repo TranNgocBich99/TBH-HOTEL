@@ -28,7 +28,7 @@ if(!function_exists('dd')){
 	function dd($arr){
 		echo '<pre style="background: #000; color: #fff; padding: 20px;">';
 		print_r($arr);
-		echo '</pre>';
+		echo '</pre>';die;
 	}
 }
 if(!function_exists('ue_cut_string')){
@@ -89,3 +89,24 @@ if(!function_exists('ue_get_cart_total_price')){
 	}
 }
 
+if(!function_exists('ue_url_params')){
+	function ue_url_params(){
+		$res = [
+			'controller' => '',
+			'action'
+		];
+		$url = UE_Input::get('url');
+		$url = rtrim($url, '/');
+		$params = array();
+		if(!empty($url)){
+			$url = explode('/', $url);
+			if(isset($url[0])){
+				$res['controller'] = $url[0];
+			}
+			if(isset($url[1])){
+				$res['action'] = $url[1];
+			}
+		}
+		return $res;
+	}
+}

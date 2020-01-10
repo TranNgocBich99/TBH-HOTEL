@@ -9,8 +9,6 @@
 				<div class="col-sm-6">
 					<img src="<?php ue_assets('images/logo.png') ?>" class = "logo">
 					<div>Mời quý khách hãy đến với TBH Hotel để cảm nhận sự bình yên và thư thái</div>
-					<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
-				
 				</div>
 				<div class="col-sm-6 hotea">
 					<div class = "ho">
@@ -21,9 +19,8 @@
 					<div class = "foo">Điện thoại: +84 12 345 678</div>
 					<br>
 					<div class = "foo">Email: trangvtrangvbichhue@gmail.com</div>
-					<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
 				</div>
-
+				<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
 			</div>
 		</div>
 	</div>
@@ -56,7 +53,8 @@
 	<script>
 	$(function() {
 	  $('input[name="daterange"]').daterangepicker({
-	    opens: 'right'
+        opens: 'right',
+          "autoApply": true
 	  });
 	});
 

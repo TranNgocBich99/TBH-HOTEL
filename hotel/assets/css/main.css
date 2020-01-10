@@ -1,0 +1,10 @@
+.calendar .cal input[name="daterange"] {
+  font-size: 15px;
+  font-weight: 600;
+  background: transparent;
+  margin-left: 10px; }
+.calendar .cal .far {
+  position: relative;
+  top: 1px; }
+
+/*# sourceMappingURL=main.css.map */

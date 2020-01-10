@@ -1,0 +1,127 @@
+.calendar-wrapper .col-left{
+    width: 21%;
+    float: right;
+}
+.calendar-wrapper .col-left label{
+    display: block;
+    margin-bottom: 5px;
+}
+.calendar-wrapper .col-left .form-group{
+    margin-bottom: 15px;
+}
+.calendar-wrapper .col-right{
+    width: 76%;
+    float: left;
+    position: relative;
+}
+.calendar-wrapper .col-right .calendar-content{
+    width: 100%;
+    min-height: 321px;
+}
+.calendar-wrapper .col-right .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin: auto;
+    width: 19px;
+    height: 20px;
+    z-index: 9;
+}
+.calendar-wrapper .col-right .overlay .spinner{
+    margin: 0;
+}
+.calendar-form .form-message{
+    font-style: italic;
+    display: none;
+    background: #fff;
+    border-left: 4px solid #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    padding: 8px 12px;
+}
+.calendar-form .form-message.success{
+    border-color:#3dd617;
+    display: block;
+}
+.calendar-form .form-message p{
+    margin: 0px;
+}
+.calendar-form .form-message.error{
+    border-color:#cc0000;
+    display: block;
+}
+.overlay {
+    display: none;
+}
+.overlay.open{
+    display: block;
+}
+.fc-content .price{
+    margin-left: -2px;
+    margin-right: -2px;
+    height: 100%;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    padding: 4px;
+    border-radius: 4px;
+}
+.fc-day-grid-event .fc-content{
+    overflow: inherit !important;
+}
+.fc-content .price.available{
+    background: #38a725;
+}
+.fc-content .price.unavailable{
+   background: #d22a41;
+}
+.fc-content .price.is-base{
+    background: #20688c;
+}
+.box-caption{
+
+}
+.box-caption ul{
+
+}
+.box-caption ul li{
+    /* float: left;
+    margin-right: 20px; */
+}
+.box-caption ul li span{
+    height: 18px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+.box-caption ul li .is-base{
+    background: #20688c;
+}
+.box-caption ul li .is-custom{
+    background: #38a725;
+}
+.box-caption ul li .is-unavailable{
+    background: #d22a41;
+}
+.fc-highlight{
+    opacity: 1 !important;
+}
+
+.loading-content .spinner, .spinner.is-active {
+    visibility: visible;
+}
+.spinner {
+    background: url(../images/spinner.gif) no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    visibility: hidden;
+    float: right;
+    vertical-align: middle;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    width: 20px;
+    height: 20px;
+    margin: 4px 10px 0;
+}

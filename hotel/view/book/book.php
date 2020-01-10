@@ -12,10 +12,18 @@
 			<hr>
 			<div class="row">
 				<div class="col-sm-6">
+                    <div id="check-availability"></div>
+                    <form class="" method="GET" action="<?php echo ue_get_link('book', 'index'); ?>#check-availability">
 					<div class="cal">
-					<i class="far fa-calendar-alt"></i> <input type="text" name="daterange" value="" />
-					<div class="down"><i class="fas fa-sort-down"></i></div>
+                        <i class="far fa-calendar-alt"></i>
+                        <input id="room-calendar" type="text" name="daterange" value="" />
+                        <div class="down"><i class="fas fa-sort-down"></i></div>
+
+
 					</div>
+                        &nbsp; &nbsp;
+                    <button type="submit" class="btn btn-primary ml-5">KIỂM TRA</button>
+                    </form>
 				</div>
 				<div class="col-sm-6">
 					<form method="GET">
@@ -33,7 +41,7 @@
 		
 		
 		<br>
-		<p><i class="fas fa-angle-right"></i> Xin mời quý khách chọn phòng.</p>
+		<p style="color: red;"><i class="fas fa-angle-right" style="color: red;"></i > Xin mời quý khách chọn phòng.</p>
 
 		<?php
 			if(!empty($res)){

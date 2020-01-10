@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,6 +14,22 @@
 	<link href="<?php echo SITEURL; ?>assets/plugins/fontawesome/css/all.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="<?php ue_assets('images/logo2.png') ?>">
 	<link rel="stylesheet" href="<?php echo SITEURL; ?>assets/admin/css/admin.css">
+
+    <?php
+    $url_params = ue_url_params();
+    if($url_params['controller'] == 'room' && $url_params['action'] == 'edit'){
+        ?>
+        <link rel="stylesheet" href="<?php ue_assets('admin/css/calendar.css'); ?>">
+        <link rel="stylesheet" type="text/css" href="<?php ue_assets('plugins/daterangepicker/daterangepicker.css')?>">
+        <link rel="stylesheet" href="<?php ue_assets('admin/plugins/fullcalendar/fullcalendar.min.css'); ?>">
+
+        <?php
+    }
+    ?>
+
+    <script>
+        var site_url = '<?php echo SITEURL; ?>';
+    </script>
 	
 
 	<style>
@@ -33,7 +49,7 @@
 		}
 	</style>
 	<!-- Custom styles for this template -->
-	<link href="<?php echo SITEURL; ?>assets/admin/css/dashboard.css" rel="stylesheet">
+	<link href="<?php echo SITEURL; ?>assets/admin/css/admin.css" rel="stylesheet">
 	<script>
         var site_url = '<?php echo SITEURL; ?>';
     </script>

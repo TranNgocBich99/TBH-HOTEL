@@ -14,7 +14,7 @@ class User extends Base_Controller{
 				$user_data = $this->model->getUserData($username, $password);
 				if(!empty($user_data)){
 					$_SESSION['login'] = array_shift($user_data);
-					header('Location: http://localhost/CNPM/hotel/');
+					header('location: ' . SITEURL);
 				}else{
 					$this->loadView('user/login', array('errors' => 'Đăng nhập thất bại.'));
 				}

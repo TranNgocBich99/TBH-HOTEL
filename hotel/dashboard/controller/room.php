@@ -3,6 +3,111 @@ class Room extends Base_controller{
 	public function __construct(){
 		parent:: __construct();
 	}
+
+	public function getAvailability(){
+		$results = [];
+		$post_id       = UE_Input::post( 'post_id', '' );
+		$check_in      = UE_Input::post( 'start', '' );
+		$check_out     = UE_Input::post( 'end', '' );
+
+		if(!empty($post_id) and !empty($check_in) and !empty($check_out)){
+			$data = $this->model->getRoomAvailability($post_id, $check_in, $check_out);
+			for ( $i = intval( $check_in ); $i <= intval( $check_out ); $i = strtotime( '+1 day', $i ) ) {
+				$in_date = false;
+				if ( is_array( $data ) and ! empty( $data ) ) {
+					foreach ( $data as $key => $val ) {
+						if ( $i >= intval( $val['check_in'] ) && $i <= intval( $val['check_out'] ) ) {
+							$item = [
+								'id' => $i,
+								'title' => 'room_' . $post_id,
+								'start'   => date( 'Y-m-d', $i ),
+								'price'   => floatval( $val['price'] ),
+								'status'  => $val['status'],
+								'is_base' => 0
+							];
+							if ( ! $in_date ) {
+								$in_date = true;
+							}
+						}
+					}
+				}
+				if ( isset( $item ) ) {
+					$results[] = $item;
+					unset($item);
+				}
+			}
+		}
+		echo json_encode($results);die;
+	}
+
+	public function addAvailability(){
+		$check_in = UE_Input::post('calendar_check_in', '');
+		$check_out = UE_Input::post('calendar_check_out', '');
+
+		if ( empty( $check_in ) or empty( $check_out ) ) {
+			echo json_encode([
+				'status' => false,
+				'message' => 'The check in or check out field is not empty.'
+			]);die;
+		}
+
+		if ( $check_in > $check_out ) {
+			echo json_encode([
+				'status' => false,
+				'message' => 'The check out is later than the check in field.'
+			]);die;
+		}
+
+		$status = UE_Input::post( 'calendar_status', 'available' );
+		$price = UE_Input::post( 'calendar_price', '' );
+		if ( $status == 'available' ) {
+			if(empty($price)){
+				echo json_encode([
+					'status' => false,
+					'message' => 'The price field is required.'
+				]);die;
+			}
+			if ( filter_var( $price, FILTER_VALIDATE_FLOAT ) === false ) {
+				echo json_encode([
+					'status' => false,
+					'message' => 'The price field is not a number.'
+				]);die;
+			}
+		}
+		$post_id = UE_Input::post( 'calendar_post_id', '' );
+		$parent_id = 0;
+		$number = 1;
+		$booking_period = 3;
+		$adult_number = 2;
+		$child_number = 4;
+
+		if(empty($price))
+			$price = '';
+
+		for ( $i = $check_in; $i <= $check_out; $i = strtotime( '+1 day', $i ) ) {
+			$data = [
+				'post_id'   => $post_id,
+				'check_in'  => $i,
+				'check_out' => $i,
+				'price'     => $price,
+				'status'    => $status,
+				'parent_id' => $parent_id,
+				'number' => $number,
+				'booking_period' => $booking_period,
+				'adult_number' => $adult_number,
+				'child_number' => $child_number,
+			];
+			$data = $this->model->insertOrUpdate($data);
+		}
+
+		$arr_success = [
+			'type' => 'success',
+			'status' => 1,
+			'message' => 'Successfully'
+		];
+		echo json_encode($arr_success);die;
+	}
+
 	public function listRoom(){
 		$data = $this->model->getRoom();
 		$this->loadView('room/list', array('res' => $data));
