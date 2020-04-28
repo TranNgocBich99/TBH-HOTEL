@@ -27,7 +27,7 @@ class Cart extends Base_Controller {
 			}
 			header('location: ' . ue_get_link('cart', 'detail'));exit();
 		}else {
-			header('location: ' . ue_get_link('user', 'login'));exit();
+			header('location: ' . ue_get_link('user', 'info-user'));exit();
 		}
 	}
 
