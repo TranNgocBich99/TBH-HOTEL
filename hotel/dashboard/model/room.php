@@ -10,8 +10,6 @@ class Room_Model extends Base_Model{
 
 		if($query->num_rows <= 0){
 			$insert_sql = "INSERT INTO room_availability (post_id, check_in, check_out, price, status, parent_id, `number`, booking_period, adult_number, child_number) ";
-			if(!empty($data)){
-					$join = "VALUES ({$data['post_id']}, {$data['check_in']}, {$data['check_out']}, '{$data['price']}', '{$data['status']}', {$data['parent_id']}, {$data['number']}, {$data['booking_period']}, {$data['adult_number']}, {$data['child_number']})";
 				mysqli_query($this->conn, $insert_sql . $join);
 			}
 		}else{
@@ -48,11 +46,6 @@ class Room_Model extends Base_Model{
 	}
 	public function delete($room_id){
 		$sql = "DELETE FROM room WHERE room_id = $room_id";
-		$query = mysqli_query($this->conn, $sql);
-		return $query;
-	}
-	public function add($data){
-		$sql = "INSERT INTO room(room_name, price, adults, children, category_id, confirmation, thumb) VALUES('{$data['room_name']}', '{$data['price']}', '{$data['adults']}', '{$data['children']}', '{$data['category_id']}', '{$data['confirmation']}', '{$data['thumb']}')";
 		$query = mysqli_query($this->conn, $sql);
 		return $query;
 	}

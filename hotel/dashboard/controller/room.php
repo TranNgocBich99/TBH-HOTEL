@@ -93,7 +93,6 @@ class Room extends Base_controller{
 				'status'    => $status,
 				'parent_id' => $parent_id,
 				'number' => $number,
-				'booking_period' => $booking_period,
 				'adult_number' => $adult_number,
 				'child_number' => $child_number,
 			];

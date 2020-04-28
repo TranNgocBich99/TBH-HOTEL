@@ -12,11 +12,7 @@ class Cart extends Base_Controller {
 
 				if(!empty($check_in) && !empty($check_out)){
 					$book_id = UE_Input::post('room_id');
-					$this->loadModel('Room');
-					$book_data = $this->model->getRoomByID($book_id);
 					if(!empty($book_data)){			
-						$_SESSION['hotel_cart'][$book_data['room_id']] = $book_data;
-						$_SESSION['hotel_cart'][$book_data['room_id']]['check_in'] = $check_in;
 						$_SESSION['hotel_cart'][$book_data['room_id']]['check_out'] = $check_out;
 
 					}

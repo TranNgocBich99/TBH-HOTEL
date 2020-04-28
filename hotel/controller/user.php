@@ -23,24 +23,6 @@ class User extends Base_Controller{
 		}
 		$this->loadView('user/login');
 	}
-	public function login() {
-		if(isset($_POST['login_action'])){
-			$username = UE_Input::post('username');
-			if(empty($username))){
-				$this->loadView('user/info-user', array('errors' => 'Tài khoản hoặc Mật khẩu không được trống.'));
-			}else{
-				$user_data = $this->model->getUserData($username, $password);
-				if(!empty($user_data)){
-					$_SESSION['login'] = array_shift($user_data);
-					header('location: ' . SITEURL);
-				}else{
-					$this->loadView('user/info-user', array('errors' => 'Thông tn khách hàng đặt phòng'));
-				}
-			}
-			return;
-		}
-		$this->loadView('user/login');
-	}
 	public function logout(){
 		if(isset($_SESSION['login'])){
 			unset($_SESSION['hotel_cart']);
